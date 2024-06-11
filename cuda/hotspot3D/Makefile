@@ -1,6 +1,6 @@
-include ~/rodinia_3.0/common/make.config
+include /mnt/c/Users/tamar/Desktop/masterHPC/TFM/gpu-rodinia/common/make.config
 
-CC := $(CUDA_DIR)/bin/nvcc
+CC := nvcc
 
 INCLUDE := $(CUDA_DIR)/include
 

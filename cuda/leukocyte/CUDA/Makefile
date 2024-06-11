@@ -9,7 +9,7 @@ CC = gcc
 CC_FLAGS = -g -O3 -Wall -I$(MATRIX_DIR)
 
 # CUDA compiler
-NVCC = $(CUDA_DIR)/bin/nvcc
+NVCC = nvcc
 NVCC_FLAGS = -I$(CUDA_DIR)/include -I$(SDK_DIR)/common/inc
 
 # Matrix library path

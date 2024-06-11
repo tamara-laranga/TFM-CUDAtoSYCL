@@ -1,7 +1,7 @@
 include ../../common/make.config
 
 LOCAL_CC = gcc -g -O3 -Wall
-CC := $(CUDA_DIR)/bin/nvcc
+CC := nvcc
 
 all : nn hurricane_gen
 

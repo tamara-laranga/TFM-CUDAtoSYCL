@@ -9,7 +9,7 @@ cudagdb=0 #compile for use with cuda-gdb, note that 'dbg' must be 1 as well
 performancetest=1
 
 # NVCC Options
-NVCCFLAGS += -arch sm_20
+NVCCFLAGS += -DOUTPUT --compiler-options -fno-strict-aliasing -std=c++11
 
 # Files
 CFILES := 
@@ -86,7 +86,7 @@ OUTPUT = -DOUTPUT
 CXX := g++
 CC := gcc
 LINK := g++ -fPIC
-NVCC := $(CUDA_INSTALL_PATH)/bin/nvcc
+NVCC := nvcc
 
 # Generate object files list
 COBJS=$(CFILES:.c=.c.o)

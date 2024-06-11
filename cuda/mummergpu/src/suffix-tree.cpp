@@ -1761,7 +1761,7 @@ extern "C"
     dnachar[(unsigned char) 'G'] = 1;
     dnachar[(unsigned char) 'T'] = 1;
     
-    while ((bytes_read = read(qfile, buf, sizeof(buf))) != 0)
+    while ((bytes_read = fread(buf, 1, sizeof(buf))) != 0)
     {
         // cerr << "bytes_read: " << bytes_read << endl;
         
