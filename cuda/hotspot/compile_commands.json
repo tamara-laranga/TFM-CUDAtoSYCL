@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  -o hotspot -I/usr/local/cuda/include -D__CUDACC__=1 hotspot.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hotspot",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hotspot/hotspot.cu"
+    }
+]
