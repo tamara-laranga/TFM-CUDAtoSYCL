@@ -1,0 +1,21 @@
+[
+    {
+        "command": "nvcc -c  -I./AVI -O3 -D__CUDACC__=1 main.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall/main.cu"
+    },
+    {
+        "command": "nvcc  main.o ./AVI/avilib.o ./AVI/avimod.o -I/usr/local/cuda/include -o heartwall -D__CUDACC__=1",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall"
+    },
+    {
+        "command": "cc -c avimod.c",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall/AVI",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall/AVI/avimod.c"
+    },
+    {
+        "command": "cc -c avilib.c",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall/AVI",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/heartwall/AVI/avilib.c"
+    }
+]
