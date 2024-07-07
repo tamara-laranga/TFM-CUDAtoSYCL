@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  -o bfs.out -I/usr/local/cuda/include -I../util -DTIMING -D__CUDACC__=1 bfs.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/bfs",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/bfs/bfs.cu"
+    }
+]

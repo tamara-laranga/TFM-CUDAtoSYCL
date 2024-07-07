@@ -1,0 +1,1 @@
+SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1 ./b+tree.out file ../../data/b+tree/mil.txt command ../../data/b+tree/command.txt
