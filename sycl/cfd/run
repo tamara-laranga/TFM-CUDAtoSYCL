@@ -1,5 +1,5 @@
 There are three datasets:
 
-./euler3d ../../data/cfd/fvcorr.domn.097K   
+SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1  ./euler3d ../../data/cfd/fvcorr.domn.097K   
 
 replace euler3d with other CFD programs

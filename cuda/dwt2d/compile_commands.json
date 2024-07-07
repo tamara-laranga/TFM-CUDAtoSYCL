@@ -1,0 +1,46 @@
+[
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o main.cu.o -D__CUDACC__=1 main.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/main.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt.cu.o -D__CUDACC__=1 dwt.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o components.cu.o -D__CUDACC__=1 components.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/components.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt_cuda/fdwt53.cu.o -D__CUDACC__=1 dwt_cuda/fdwt53.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt_cuda/fdwt53.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt_cuda/fdwt97.cu.o -D__CUDACC__=1 dwt_cuda/fdwt97.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt_cuda/fdwt97.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt_cuda/common.cu.o -D__CUDACC__=1 dwt_cuda/common.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt_cuda/common.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt_cuda/rdwt97.cu.o -D__CUDACC__=1 dwt_cuda/rdwt97.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt_cuda/rdwt97.cu"
+    },
+    {
+        "command": "nvcc -c  -DOUTPUT -DOUTPUT -std=c++11 -I. -I/include -O2 -o dwt_cuda/rdwt53.cu.o -D__CUDACC__=1 dwt_cuda/rdwt53.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d/dwt_cuda/rdwt53.cu"
+    },
+    {
+        "command": "ld -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQh6TSr.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -melf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o dwt2d /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o main.cu.o dwt.cu.o components.cu.o dwt_cuda/fdwt53.cu.o dwt_cuda/fdwt97.cu.o dwt_cuda/common.cu.o dwt_cuda/rdwt97.cu.o dwt_cuda/rdwt53.cu.o /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/dwt2d"
+    }
+]
