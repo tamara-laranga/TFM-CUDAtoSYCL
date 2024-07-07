@@ -1,0 +1,2 @@
+SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1  ./gaussian -f ../../data/gaussian/matrix4.txt
+SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1  ./gaussian -s 16

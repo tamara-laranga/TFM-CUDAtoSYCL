@@ -1,0 +1,1072 @@
+---
+MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/MainSrcFiles_placehold'
+Replacements:
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          679
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          743
+    Length:          19
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          2069
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          2125
+    Length:          0
+    ReplacementText: ', const sycl::nd_item<3> &item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          2129
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          2202
+    Length:          0
+    ReplacementText: ",\n          const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          6726
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          6730
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          6787
+    Length:          32
+    ReplacementText: 'nDevCount = dpct::dev_mgr::instance().device_count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7011
+    Length:          11
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7026
+    Length:          48
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_device_info(deviceProp, dpct::dev_mgr::instance().get_device(nDeviceIdx)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7142
+    Length:          4
+    ReplacementText: 'get_name()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7282
+    Length:          14
+    ReplacementText: 'get_global_mem_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7308
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1019:2: local_mem_size in SYCL is not a complete equivalent of sharedMemPerBlock in CUDA. You may need to adjust the code.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7385
+    Length:          17
+    ReplacementText: 'get_local_mem_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7414
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1090:3: SYCL does not support the device property that would be functionally compatible with regsPerBlock. It was not migrated. You need to rewrite the code.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7573
+    Length:          8
+    ReplacementText: 'get_max_sub_group_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7588
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1051:4: SYCL does not support a device property functionally compatible with memPitch. It was migrated to INT_MAX. You may need to adjust the value of INT_MAX for the specific device.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7642
+    Length:          19
+    ReplacementText: INT_MAX
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7735
+    Length:          18
+    ReplacementText: 'get_max_work_group_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7838
+    Length:          13
+    ReplacementText: 'get_max_work_item_sizes<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7867
+    Length:          13
+    ReplacementText: 'get_max_work_item_sizes<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7896
+    Length:          13
+    ReplacementText: 'get_max_work_item_sizes<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7919
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1022:5: There is no exact match between the maxGridSize and the max_nd_range size. Verify the correctness of the code.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          7996
+    Length:          11
+    ReplacementText: 'get_max_nd_range_size<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8023
+    Length:          11
+    ReplacementText: 'get_max_nd_range_size<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8050
+    Length:          11
+    ReplacementText: 'get_max_nd_range_size<int *>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8071
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1051:6: SYCL does not support a device property functionally compatible with totalConstMem. It was migrated to get_global_mem_size. You may need to adjust the value of get_global_mem_size for the specific device.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8132
+    Length:          24
+    ReplacementText: 'deviceProp.get_global_mem_size()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8163
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1005:7: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8220
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8238
+    Length:          5
+    ReplacementText: 'get_minor_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8310
+    Length:          9
+    ReplacementText: 'get_max_clock_frequency()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8326
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1051:8: SYCL does not support a device property functionally compatible with textureAlignment. It was migrated to dpct::get_current_device().get_info<sycl::info::device::mem_base_addr_align>(). You may need to adjust the value of dpct::get_current_device().get_info<sycl::info::device::mem_base_addr_align>() for the specific device.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8383
+    Length:          27
+    ReplacementText: 'dpct::get_current_device().get_info<sycl::info::device::mem_base_addr_align>()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8417
+    Length:          0
+    ReplacementText: "\t\t\t    /*\n\t\t\t    DPCT1051:9: SYCL does not support a device property functionally compatible with deviceOverlap. It was migrated to true. You may need to adjust the value of true for the specific device.\n\t\t\t    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8466
+    Length:          25
+    ReplacementText: 'true'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8594
+    Length:          19
+    ReplacementText: 'get_max_compute_units()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8641
+    Length:          0
+    ReplacementText: "\t        /*\n\t        DPCT1009:10: SYCL uses exceptions to report errors and does not use the error codes. The original code was commented out and a warning string was inserted. You need to rewrite this code.\n\t        */\n\t        /*\n\t        DPCT1010:11: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n\t        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8666
+    Length:          38
+    ReplacementText: '"cudaGetErrorString is not supported"/*cudaGetErrorString(0)*/'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          8717
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10323
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10389
+    Length:          0
+    ReplacementText: ",\n          const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10585
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10599
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10612
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10661
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10672
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10683
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10720
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10731
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10742
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          10961
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11049
+    Length:          0
+    ReplacementText: ",\n          const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11059
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11073
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11086
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11123
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11137
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11150
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11196
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11209
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11222
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11248
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11261
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          11274
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12151
+    Length:          0
+    ReplacementText: "\n  dpct::device_ext &dev_ct1 = dpct::get_current_device();\n  sycl::queue &q_ct1 = dev_ct1.in_order_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12230
+    Length:          58
+    ReplacementText: 'm_cuda = sycl::malloc_device<float>(Size * Size, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12296
+    Length:          58
+    ReplacementText: 'a_cuda = sycl::malloc_device<float>(Size * Size, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12361
+    Length:          51
+    ReplacementText: 'b_cuda = sycl::malloc_device<float>(Size, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12443
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12492
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12517
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12521
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12570
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12595
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12599
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12641
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12666
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12842
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12856
+    Length:          10
+    ReplacementText: 1, 1, block_size
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12871
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          12884
+    Length:          9
+    ReplacementText: 1, 1, grid_size
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13090
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13106
+    Length:          23
+    ReplacementText: 1, blockSize2d, blockSize2d
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13134
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13149
+    Length:          21
+    ReplacementText: 1, gridSize2d, gridSize2d
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13372
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1049:0: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13374
+    Length:          48
+    ReplacementText: "q_ct1.submit(\n\t\t  [&](sycl::handler &cgh) {\n\t\t    int Size_ct2 = Size;\n\n\t\t    cgh.parallel_for(\n\t\t      sycl::nd_range<3>(dimGrid * dimBlock, dimBlock), \n\t\t      [=](sycl::nd_item<3> item_ct1) {\n\t\t        Fan1(m_cuda, a_cuda, Size_ct2, t, item_ct1);\n\t\t      });\n\t\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13422
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13427
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13453
+    Length:          0
+    ReplacementText: "\t\t/*\n\t\tDPCT1049:1: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13455
+    Length:          66
+    ReplacementText: "q_ct1.submit(\n\t\t  [&](sycl::handler &cgh) {\n\t\t    int Size_ct3 = Size;\n\t\t    int Size_t_ct4 = Size-t;\n\n\t\t    cgh.parallel_for(\n\t\t      sycl::nd_range<3>(dimGridXY * dimBlockXY, dimBlockXY), \n\t\t      [=](sycl::nd_item<3> item_ct1) {\n\t\t        Fan2(m_cuda, a_cuda, b_cuda, Size_ct3, Size_t_ct4, t, item_ct1);\n\t\t      });\n\t\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13521
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13526
+    Length:          23
+    ReplacementText: 'dev_ct1.queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          13963
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14012
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14037
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14041
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14090
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14115
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14119
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14161
+    Length:          23
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14186
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14190
+    Length:          16
+    ReplacementText: 'dpct::dpct_free(m_cuda, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14210
+    Length:          16
+    ReplacementText: 'dpct::dpct_free(a_cuda, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          14230
+    Length:          16
+    ReplacementText: 'dpct::dpct_free(b_cuda, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          16074
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1010:12: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          16078
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          16096
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Offset:          16121
+    Length:          186
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu'
+    Digest:          41b85dcec071c65cdab85400d12be6d3
+DpctVersion:     18.0.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

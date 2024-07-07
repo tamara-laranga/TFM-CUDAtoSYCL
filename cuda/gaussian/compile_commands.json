@@ -1,0 +1,19 @@
+[
+  {
+    "arguments": [
+      "/usr/local/cuda-12.5/bin/nvcc",
+      "-c",
+      "-I/usr/local/cuda/include",
+      "-I",
+      "/home/tamara/workspace/c2s_install/include",
+      "-I",
+      ".",
+      "-o",
+      "gaussian",
+      "gaussian.cu"
+    ],
+    "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian",
+    "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian.cu",
+    "output": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/gaussian/gaussian"
+  }
+]
