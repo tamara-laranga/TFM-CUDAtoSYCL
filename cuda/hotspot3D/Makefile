@@ -1,4 +1,4 @@
-include /mnt/c/Users/tamar/Desktop/masterHPC/TFM/gpu-rodinia/common/make.config
+include  ../../common/make.config
 
 CC := nvcc
 

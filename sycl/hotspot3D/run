@@ -1,0 +1,1 @@
+ONEAPI_DEVICE_SELECTOR=cuda:* SYCL_PI_TRACE=1  ./3D 512 8 100 ../../data/hotspot3D/power_512x8 ../../data/hotspot3D/temp_512x8 output.out

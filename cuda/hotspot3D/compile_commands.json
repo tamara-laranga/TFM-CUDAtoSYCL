@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  --cuda-noopt-device-debug -o 3D -I/usr/local/cuda/include -D__CUDACC__=1 3D.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hotspot3D",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hotspot3D/3D.cu"
+    }
+]
