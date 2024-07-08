@@ -1,1 +1,1 @@
-SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1 ./heartwall ../../data/heartwall/test.avi 20
+ONEAPI_DEVICE_SELECTOR=cuda:* SYCL_PI_TRACE=1 ./heartwall ../../data/heartwall/test.avi 20

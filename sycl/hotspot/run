@@ -1,1 +1,1 @@
-SYCL_DEVICE_FILTER=cuda SYCL_PI_TRACE=1 ./hotspot 512 2 2 ../../data/hotspot/temp_512 ../../data/hotspot/power_512 output.out
+ONEAPI_DEVICE_SELECTOR=cuda:* SYCL_PI_TRACE=1 ./hotspot 512 2 2 ../../data/hotspot/temp_512 ../../data/hotspot/power_512 output.out
