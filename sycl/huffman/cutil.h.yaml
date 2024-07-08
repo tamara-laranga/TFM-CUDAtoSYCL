@@ -1,0 +1,172 @@
+---
+MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/sycl/huffman/cutil.h'
+Replacements:
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#define DPCT_COMPAT_RT_VERSION 12040\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          988
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          36737
+    Length:          14
+    ReplacementText: DPCT_COMPAT_RT_VERSION
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          36906
+    Length:          14
+    ReplacementText: DPCT_COMPAT_RT_VERSION
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          38746
+    Length:          0
+    ReplacementText: "/*\nDPCT1009:19: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced by a placeholder string. You need to rewrite this code.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          38830
+    Length:          9
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          38910
+    Length:          321
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          41760
+    Length:          0
+    ReplacementText: "/*\nDPCT1010:20: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced with 0. You need to rewrite this code.\n*/\n/*\nDPCT1009:21: SYCL uses exceptions to report errors and does not use the error codes. The call was replaced by a placeholder string. You need to rewrite this code.\n*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          41844
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          41862
+    Length:          18
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Offset:          41924
+    Length:          321
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cutil.h'
+    Digest:          471183ee27c1cdcd287547a663ddc0fa
+DpctVersion:     2024.2.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

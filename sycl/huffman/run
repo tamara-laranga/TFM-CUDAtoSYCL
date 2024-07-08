@@ -1,0 +1,1 @@
+ONEAPI_DEVICE_SELECTOR=cuda:* SYCL_PI_TRACE=1  ./pavle ../../data/huffman/test1024_H2.206587175259.in 

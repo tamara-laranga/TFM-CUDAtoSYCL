@@ -1,0 +1,2542 @@
+---
+MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/MainSrcFiles_placehold'
+Replacements:
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          625
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          748
+    Length:          11
+    ReplacementText: 'dpct::err0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          821
+    Length:          154
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1043
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1145
+    Length:          0
+    ReplacementText: ",\n        const sycl::nd_item<3> &item_ct1,\n        unsigned int *temp"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1156
+    Length:          35
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1204
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1227
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:25: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1259
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1273
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1286
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1316
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1329
+    Length:          9
+    ReplacementText: 'item_ct1.get_group_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1373
+    Length:          32
+    ReplacementText: 'dpct::atomic_fetch_add<sycl::access::address_space::generic_space>(&temp[buffer[i]], 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1443
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:26: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1465
+    Length:          53
+    ReplacementText: 'dpct::atomic_fetch_add<sycl::access::address_space::generic_space>(&(histo[item_ct1.get_local_id(2)]), temp[item_ct1.get_local_id(2)])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1912
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          1941
+    Length:          35
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_device_info(prop, dpct::dev_mgr::instance().get_device(0)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2003
+    Length:          19
+    ReplacementText: 'get_max_compute_units()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2025
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1051:27: SYCL does not support a device property functionally compatible with deviceOverlap. It was migrated to true. You may need to adjust the value of true for the specific device.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2033
+    Length:          18
+    ReplacementText: 'true'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2450
+    Length:          44
+    ReplacementText: 'dev_buffer0 = (unsigned char *)sycl::malloc_device(partSize, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2502
+    Length:          44
+    ReplacementText: 'dev_buffer1 = (unsigned char *)sycl::malloc_device(partSize, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2554
+    Length:          66
+    ReplacementText: 'dev_histo = (unsigned int *)sycl::malloc_device(256 * sizeof( int ), dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2628
+    Length:          10
+    ReplacementText: 'dpct::get_in_order_queue().memset'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2688
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2696
+    Length:          12
+    ReplacementText: 'dpct::queue_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2738
+    Length:          26
+    ReplacementText: 'DPCT_CHECK_ERROR(stream0 = dpct::get_current_device().create_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2778
+    Length:          26
+    ReplacementText: 'DPCT_CHECK_ERROR(stream1 = dpct::get_current_device().create_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2812
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2848
+    Length:          25
+    ReplacementText: 'DPCT_CHECK_ERROR(start = new sycl::event())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2884
+    Length:          24
+    ReplacementText: 'DPCT_CHECK_ERROR(stop = new sycl::event())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2913
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1024:28: The original code returned the error code that was further consumed by the program logic. This original code was replaced with 0. You may need to rewrite the program logic consuming the error code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2919
+    Length:          15
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::sync_barrier'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2943
+    Length:          1
+    ReplacementText: '&dpct::get_in_order_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          2946
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3023
+    Length:          0
+    ReplacementText: "/*\n        DPCT1124:29: cudaMemcpyAsync is migrated to asynchronous memcpy API. While the origin API might be synchronous, it depends on the type of operand memory, so you may need to call wait() on event return by memcpy API to ensure synchronization behavior.\n        */\n        "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3029
+    Length:          15
+    ReplacementText: 'DPCT_CHECK_ERROR(stream0->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3076
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3100
+    Length:          8
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3109
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3121
+    Length:          0
+    ReplacementText: "/*\n        DPCT1124:30: cudaMemcpyAsync is migrated to asynchronous memcpy API. While the origin API might be synchronous, it depends on the type of operand memory, so you may need to call wait() on event return by memcpy API to ensure synchronization behavior.\n        */\n        "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3127
+    Length:          15
+    ReplacementText: 'DPCT_CHECK_ERROR(stream1->memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3185
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3209
+    Length:          8
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3218
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3300
+    Length:          76
+    ReplacementText: "stream0->submit(\n          [&](sycl::handler &cgh) {\n            sycl::local_accessor<unsigned int, 1> temp_acc_ct1(sycl::range<1>(256), cgh);\n\n            cgh.parallel_for(\n              sycl::nd_range<3>(sycl::range<3>(1, 1, blocks*2) * sycl::range<3>(1, 1, 256), sycl::range<3>(1, 1, 256)), \n              [=](sycl::nd_item<3> item_ct1) {\n                histo_kernel(dev_buffer0, partSize, dev_histo, item_ct1, temp_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n              });\n          });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3376
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3387
+    Length:          76
+    ReplacementText: "stream1->submit(\n          [&](sycl::handler &cgh) {\n            sycl::local_accessor<unsigned int, 1> temp_acc_ct1(sycl::range<1>(256), cgh);\n\n            cgh.parallel_for(\n              sycl::nd_range<3>(sycl::range<3>(1, 1, blocks*2) * sycl::range<3>(1, 1, 256), sycl::range<3>(1, 1, 256)), \n              [=](sycl::nd_item<3> item_ct1) {\n                histo_kernel(dev_buffer1, partSize, dev_histo, item_ct1, temp_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n              });\n          });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3463
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3483
+    Length:          30
+    ReplacementText: 'DPCT_CHECK_ERROR(stream0->wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3527
+    Length:          30
+    ReplacementText: 'DPCT_CHECK_ERROR(stream1->wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3565
+    Length:          10
+    ReplacementText: 'dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3613
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3639
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3642
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1024:31: The original code returned the error code that was further consumed by the program logic. This original code was replaced with 0. You may need to rewrite the program logic consuming the error code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3648
+    Length:          15
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::sync_barrier'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3671
+    Length:          1
+    ReplacementText: '&dpct::get_in_order_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3674
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3685
+    Length:          28
+    ReplacementText: 'DPCT_CHECK_ERROR(stop->wait_and_throw())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3750
+    Length:          90
+    ReplacementText: 'DPCT_CHECK_ERROR(elapsedTime = (stop->get_profiling_info<sycl::info::event_profiling::command_end>() - start->get_profiling_info<sycl::info::event_profiling::command_start>()) / 1000000.0f)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3916
+    Length:          21
+    ReplacementText: 'dpct::dpct_free(dev_histo, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3944
+    Length:          23
+    ReplacementText: 'dpct::dpct_free(dev_buffer0, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Offset:          3974
+    Length:          23
+    ReplacementText: 'dpct::dpct_free(dev_buffer1, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          467
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          488
+    Length:          27
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          743
+    Length:          33
+    ReplacementText: '#include "vlc_kernel_sm64huff.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          872
+    Length:          18
+    ReplacementText: '#include "scan.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          892
+    Length:          26
+    ReplacementText: '#include "pack_kernels.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          1626
+    Length:          16
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_current_device().reset())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          3660
+    Length:          47
+    ReplacementText: 'DPCT_CHECK_ERROR(d_sourceData = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          3730
+    Length:          46
+    ReplacementText: 'DPCT_CHECK_ERROR(d_destData = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          3799
+    Length:          50
+    ReplacementText: 'DPCT_CHECK_ERROR(d_destDataPacked = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          3874
+    Length:          66
+    ReplacementText: 'DPCT_CHECK_ERROR(d_codewords = (unsigned int *)sycl::malloc_device(NUM_SYMBOLS*symbol_type_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          3963
+    Length:          69
+    ReplacementText: 'DPCT_CHECK_ERROR(d_codewordlens = (unsigned int *)sycl::malloc_device(NUM_SYMBOLS*symbol_type_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4057
+    Length:          43
+    ReplacementText: 'DPCT_CHECK_ERROR(d_cw32 = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4123
+    Length:          45
+    ReplacementText: 'DPCT_CHECK_ERROR(d_cw32len = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4191
+    Length:          45
+    ReplacementText: 'DPCT_CHECK_ERROR(d_cw32idx = (unsigned int *)sycl::malloc_device(mem_size, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4261
+    Length:          70
+    ReplacementText: 'DPCT_CHECK_ERROR(d_cindex = sycl::malloc_device<unsigned int>(num_blocks, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4354
+    Length:          70
+    ReplacementText: 'DPCT_CHECK_ERROR(d_cindex2 = sycl::malloc_device<unsigned int>(num_blocks, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4449
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4496
+    Length:          25
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4522
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4545
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4610
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4635
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4658
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4727
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4752
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4775
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4818
+    Length:          25
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4844
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4854
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4869
+    Length:          14
+    ReplacementText: 1, 1, num_blocks
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4891
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          4907
+    Length:          23
+    ReplacementText: 1, 1, num_block_threads
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5695
+    Length:          11
+    ReplacementText: 'grid_size[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5727
+    Length:          12
+    ReplacementText: 'block_size[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5762
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1083:13: The size of local memory in the migrated code may be different from the original code. Check that the allocated memory size in the migrated code is correct.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5778
+    Length:          12
+    ReplacementText: 'block_size[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5877
+    Length:          12
+    ReplacementText: 'block_size[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5925
+    Length:          11
+    ReplacementText: 'dpct::event_ptr'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5959
+    Length:          23
+    ReplacementText: 'start = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          5989
+    Length:          22
+    ReplacementText: 'stop = new sycl::event()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6020
+    Length:          15
+    ReplacementText: 'dpct::sync_barrier'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6044
+    Length:          1
+    ReplacementText: '&dpct::get_in_order_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6086
+    Length:          0
+    ReplacementText: "            /*\n            DPCT1049:12: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n            */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6098
+    Length:          226
+    ReplacementText: "dpct::get_in_order_queue().submit(\n              [&](sycl::handler &cgh) {\n                sycl::local_accessor<uint8_t, 1> dpct_local_acc_ct1(sycl::range<1>(sm_size), cgh);\n                sycl::local_accessor<unsigned int, 0> kcmax_acc_ct1(cgh);\n\n                cgh.parallel_for(\n                  sycl::nd_range<3>(grid_size * block_size, block_size), \n                  [=](sycl::nd_item<3> item_ct1) {\n                    vlc_encode_kernel_sm64huff(d_sourceData, d_codewords, d_codewordlens, d_cw32, d_cw32len, d_cw32idx, d_destData, d_cindex, item_ct1, dpct_local_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get(), kcmax_acc_ct1);\n                  });\n              });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6324
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6354
+    Length:          23
+    ReplacementText: 'dpct::get_current_device().queues_wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6384
+    Length:          15
+    ReplacementText: 'dpct::sync_barrier'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6407
+    Length:          1
+    ReplacementText: '&dpct::get_in_order_queue()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6418
+    Length:          28
+    ReplacementText: 'stop->wait_and_throw()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6480
+    Length:          62
+    ReplacementText: 'elapsedTime = (stop->get_profiling_info<sycl::info::event_profiling::command_end>() - start->get_profiling_info<sycl::info::event_profiling::command_start>()) / 1000000.0f'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6799
+    Length:          11
+    ReplacementText: 'grid_size[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6860
+    Length:          10
+    ReplacementText: 'dpct::get_in_order_queue().memset'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          6901
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7045
+    Length:          149
+    ReplacementText: "dpct::get_in_order_queue().submit(\n      [&](sycl::handler &cgh) {\n        unsigned int num_elements_num_scan_elements_ct4 = num_elements/num_scan_elements;\n\n        cgh.parallel_for(\n          sycl::nd_range<3>(sycl::range<3>(1, 1, num_scan_elements/16) * sycl::range<3>(1, 1, 16), sycl::range<3>(1, 1, 16)), \n          [=](sycl::nd_item<3> item_ct1) {\n            pack2((unsigned int*)d_destData, d_cindex, d_cindex2, (unsigned int*)d_destDataPacked, num_elements_num_scan_elements_ct4, item_ct1);\n          });\n      });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7194
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7300
+    Length:          10
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_in_order_queue().memcpy'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7347
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7372
+    Length:          0
+    ReplacementText: '.wait())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7613
+    Length:          22
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_sourceData, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7635
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7654
+    Length:          20
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_destData, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7674
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7692
+    Length:          26
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_destDataPacked, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7718
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7741
+    Length:          21
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_codewords, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7762
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7782
+    Length:          24
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_codewordlens, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7806
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7829
+    Length:          16
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_cw32, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7845
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7865
+    Length:          19
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_cw32len, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7884
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7903
+    Length:          19
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_cw32idx, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7922
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7946
+    Length:          18
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_cindex, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7964
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          7982
+    Length:          19
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::dpct_free(d_cindex2, dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Offset:          8001
+    Length:          0
+    ReplacementText: ')'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Offset:          124
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Offset:          744
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Offset:          1491
+    Length:          24
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&out[kc], cw32)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Offset:          1765
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Offset:          2585
+    Length:          24
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&out[kc], cw32)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          547
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          574
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          734
+    Length:          0
+    ReplacementText: ",\n                  const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          759
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          770
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          783
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          1221
+    Length:          30
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&dstData[dword], tmp)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          1965
+    Length:          32
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&dstData[dword+i], tmp)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          2056
+    Length:          38
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&dstData[dword+i], dw >> bit)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Offset:          2099
+    Length:          43
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&dstData[dword+i+1], dw << 32-bit)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          1575
+    Length:          35
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n#include \"scanLargeArray_kernel.dp.cpp\""
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          1671
+    Length:          0
+    ReplacementText: "\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          2256
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          2558
+    Length:          53
+    ReplacementText: 'std::max(1, (int)ceil((float)numElts / (2.f * blockSize)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          2928
+    Length:          53
+    ReplacementText: 'std::max(1, (int)ceil((float)numElts / (2.f * blockSize)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          3013
+    Length:          0
+    ReplacementText: "            /*\n            DPCT1064:33: Migrated cudaMalloc call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n            */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          3040
+    Length:          80
+    ReplacementText: 'DPCT_CHECK_ERROR(g_scanBlockSums[level++] = sycl::malloc_device<unsigned int>(numBlocks, dpct::get_in_order_queue()))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          3228
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          3343
+    Length:          28
+    ReplacementText: 'dpct::dpct_free(g_scanBlockSums[i], dpct::get_in_order_queue())'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          3880
+    Length:          57
+    ReplacementText: 'std::max(1, (int)ceil((float)numElements / (2.f * blockSize)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          4495
+    Length:          28
+    ReplacementText: 'dpct::max(1, numEltsLastBlock / 2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          4920
+    Length:          0
+    ReplacementText: "            /*\n            DPCT1083:8: The size of local memory in the migrated code may be different from the original code. Check that the allocated memory size in the migrated code is correct.\n            */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5168
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1083:5: The size of local memory in the migrated code may be different from the original code. Check that the allocated memory size in the migrated code is correct.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5440
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5451
+    Length:          38
+    ReplacementText: '1, 1, dpct::max(1, numBlocks - np2LastBlock)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5498
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5512
+    Length:          16
+    ReplacementText: 1, 1, numThreads
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5713
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1049:4: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          5721
+    Length:          321
+    ReplacementText: "dpct::get_in_order_queue().submit(\n          [&](sycl::handler &cgh) {\n            sycl::local_accessor<uint8_t, 1> dpct_local_acc_ct1(sycl::range<1>(sharedMemSize), cgh);\n\n            unsigned int * g_scanBlockSums_level_ct2 = g_scanBlockSums[level];\n            int numThreads_ct3 = numThreads * 2;\n\n            cgh.parallel_for(\n              sycl::nd_range<3>(grid * threads, threads), \n              [=](sycl::nd_item<3> item_ct1) {\n                prescan<true, false>(outArray, inArray, g_scanBlockSums_level_ct2, numThreads_ct3, 0, 0, item_ct1, dpct_local_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n              });\n          });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6042
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6133
+    Length:          0
+    ReplacementText: "            /*\n            DPCT1049:7: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n            */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6145
+    Length:          214
+    ReplacementText: "dpct::get_in_order_queue().submit(\n              [&](sycl::handler &cgh) {\n                sycl::local_accessor<uint8_t, 1> dpct_local_acc_ct1(sycl::range<1>(sharedMemLastBlock), cgh);\n\n                unsigned int * g_scanBlockSums_level_ct2 = g_scanBlockSums[level];\n                int numBlocks_ct4 = numBlocks - 1;\n                int numElements_numEltsLastBlock_ct5 = numElements - numEltsLastBlock;\n\n                cgh.parallel_for(\n                  sycl::nd_range<3>(sycl::range<3>(1, 1, numThreadsLastBlock), sycl::range<3>(1, 1, numThreadsLastBlock)), \n                  [=](sycl::nd_item<3> item_ct1) {\n                    prescan<true, true>(outArray, inArray, g_scanBlockSums_level_ct2, numEltsLastBlock, numBlocks_ct4, numElements_numEltsLastBlock_ct5, item_ct1, dpct_local_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n                  });\n              });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6359
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6941
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1049:6: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          6949
+    Length:          229
+    ReplacementText: "dpct::get_in_order_queue().submit(\n          [&](sycl::handler &cgh) {\n            sycl::local_accessor<unsigned int, 0> uni_acc_ct1(cgh);\n\n            unsigned int * g_scanBlockSums_level_ct1 = g_scanBlockSums[level];\n            int numElements_numEltsLastBlock_ct2 = numElements - numEltsLastBlock;\n\n            cgh.parallel_for(\n              sycl::nd_range<3>(grid * threads, threads), \n              [=](sycl::nd_item<3> item_ct1) {\n                uniformAdd(outArray, g_scanBlockSums_level_ct1, numElements_numEltsLastBlock_ct2, 0, 0, item_ct1, uni_acc_ct1);\n              });\n          });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7178
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7259
+    Length:          0
+    ReplacementText: "            /*\n            DPCT1049:9: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n            */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7271
+    Length:          359
+    ReplacementText: "dpct::get_in_order_queue().submit(\n              [&](sycl::handler &cgh) {\n                sycl::local_accessor<unsigned int, 0> uni_acc_ct1(cgh);\n\n                unsigned int * g_scanBlockSums_level_ct1 = g_scanBlockSums[level];\n                int numBlocks_ct3 = numBlocks - 1;\n                int numElements_numEltsLastBlock_ct4 = numElements - numEltsLastBlock;\n\n                cgh.parallel_for(\n                  sycl::nd_range<3>(sycl::range<3>(1, 1, numThreadsLastBlock), sycl::range<3>(1, 1, numThreadsLastBlock)), \n                  [=](sycl::nd_item<3> item_ct1) {\n                    uniformAdd(outArray, g_scanBlockSums_level_ct1, numEltsLastBlock, numBlocks_ct3, numElements_numEltsLastBlock_ct4, item_ct1, uni_acc_ct1);\n                  });\n              });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7630
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7743
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1049:10: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7751
+    Length:          168
+    ReplacementText: "dpct::get_in_order_queue().submit(\n          [&](sycl::handler &cgh) {\n            sycl::local_accessor<uint8_t, 1> dpct_local_acc_ct1(sycl::range<1>(sharedMemSize), cgh);\n\n            int numThreads_ct3 = numThreads * 2;\n\n            cgh.parallel_for(\n              sycl::nd_range<3>(grid * threads, threads), \n              [=](sycl::nd_item<3> item_ct1) {\n                prescan<false, false>(outArray, inArray, 0, numThreads_ct3, 0, 0, item_ct1, dpct_local_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n              });\n          });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7919
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7983
+    Length:          0
+    ReplacementText: "         /*\n         DPCT1049:11: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n         */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          7992
+    Length:          165
+    ReplacementText: "dpct::get_in_order_queue().submit(\n           [&](sycl::handler &cgh) {\n             sycl::local_accessor<uint8_t, 1> dpct_local_acc_ct1(sycl::range<1>(sharedMemSize), cgh);\n\n             cgh.parallel_for(\n               sycl::nd_range<3>(grid * threads, threads), \n               [=](sycl::nd_item<3> item_ct1) {\n                 prescan<false, true>(outArray, inArray, 0, numElements, 0, 0, item_ct1, dpct_local_acc_ct1.get_multi_ptr<sycl::access::decorated::no>().get());\n               });\n           });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Offset:          8157
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          3567
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          3966
+    Length:          0
+    ReplacementText: ",\n                                       const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          3987
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          4026
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          4062
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          4109
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          4645
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5018
+    Length:          0
+    ReplacementText: ",\n                                      const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5028
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:14: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5380
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5553
+    Length:          0
+    ReplacementText: ",\n                                 const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5567
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          5614
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6040
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6100
+    Length:          0
+    ReplacementText: ",\n                             const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6130
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6240
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6276
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1118:2: SYCL group functions and algorithms must be encountered in converged control flow. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6284
+    Length:          15
+    ReplacementText: "/*\n        DPCT1065:15: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n        */\n        item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6365
+    Length:          33
+    ReplacementText: 'sycl::mul24(sycl::mul24(2, (int)stride), (int)thid)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6676
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6757
+    Length:          0
+    ReplacementText: ",\n                             const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6788
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6887
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6940
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1118:3: SYCL group functions and algorithms must be encountered in converged control flow. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          6948
+    Length:          15
+    ReplacementText: "/*\n        DPCT1065:16: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n        */\n        item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7023
+    Length:          33
+    ReplacementText: 'sycl::mul24(sycl::mul24(2, (int)stride), (int)thid)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7386
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7481
+    Length:          0
+    ReplacementText: ",\n                         const sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7517
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7674
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7697
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7734
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          7833
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8109
+    Length:          0
+    ReplacementText: ",\n                        const sycl::nd_item<3> &item_ct1,\n                        uint8_t *dpct_local"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8178
+    Length:          40
+    ReplacementText: 'auto s_data = (unsigned int *)dpct_local;'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8370
+    Length:          0
+    ReplacementText: "                                  /*\n                                  DPCT1064:17: Migrated __mul24 call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n                                  */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8404
+    Length:          38
+    ReplacementText: 'sycl::mul24((int)item_ct1.get_group(2), (int)((item_ct1.get_local_range(2) << 1)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8573
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8672
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8887
+    Length:          0
+    ReplacementText: ', item_ct1'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          8898
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9131
+    Length:          0
+    ReplacementText: ",\n                           const sycl::nd_item<3> &item_ct1,\n                           unsigned int &uni"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9141
+    Length:          28
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9179
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9221
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9255
+    Length:          0
+    ReplacementText: "    /*\n    DPCT1064:32: Migrated __mul24 call is used in a macro/template definition and may not be valid for all macro/template uses. Adjust the code.\n    */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9282
+    Length:          38
+    ReplacementText: 'sycl::mul24((int)item_ct1.get_group(2), (int)((item_ct1.get_local_range(2) << 1)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9335
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9356
+    Length:          15
+    ReplacementText: "/*\n    DPCT1065:18: Consider replacing sycl::nd_item::barrier() with sycl::nd_item::barrier(sycl::access::fence_space::local_space) for better performance if there is no access to global memory.\n    */\n    item_ct1.barrier()"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9476
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9492
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Offset:          9506
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          659
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          684
+    Length:          30
+    ReplacementText: '#include "pabio_kernels_v2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1329
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1647
+    Length:          0
+    ReplacementText: ",\n\t\t\t\t\t\t\t\t  const sycl::nd_item<3> &item_ct1, uint8_t *dpct_local,\n\t\t\t\t\t\t\t\t  unsigned int &kcmax"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1672
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1683
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1696
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1728
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1912
+    Length:          36
+    ReplacementText: 'auto sm = (unsigned int *)dpct_local;'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          1951
+    Length:          30
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          2324
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          2892
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3097
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3133
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1118:0: SYCL group functions and algorithms must be encountered in converged control flow. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3141
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3444
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3563
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3612
+    Length:          0
+    ReplacementText: "        /*\n        DPCT1118:1: SYCL group functions and algorithms must be encountered in converged control flow. You may need to adjust the code.\n        */\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3620
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3878
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3908
+    Length:          10
+    ReplacementText: 'item_ct1.get_local_range(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          3934
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          4095
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          4365
+    Length:          48
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&as[kc], tmpcw32<<(32-startbit-wrbits))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          4715
+    Length:          41
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&as[kc+1], tmpcw32<<(32-wrbits))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          4934
+    Length:          46
+    ReplacementText: 'dpct::atomic_fetch_or<sycl::access::address_space::generic_space>(&as[kc+2], tmpcw32<<(32-codewordlen))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Offset:          4990
+    Length:          15
+    ReplacementText: 'item_ct1.barrier(sycl::access::fence_space::local_space)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/hist.cu'
+    Digest:          71d81660fe28afa20ab692e43bdba264
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu'
+    Digest:          a7c175ba1ab9202fe633a933c17a02f6
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pabio_kernels_v2.cu'
+    Digest:          4ed3533ffa791561c66b43514bbdd751
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu'
+    Digest:          2b12a9014382b229c2c7f65731f127e4
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu'
+    Digest:          3ea2befd6bc648e08cc95fbc005f815b
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scanLargeArray_kernel.cu'
+    Digest:          689eb4eb5e3e62213a9a9c7032a23e60
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu'
+    Digest:          9110bab30efa941cb5602e56df974feb
+DpctVersion:     2024.2.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

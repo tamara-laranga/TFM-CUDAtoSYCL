@@ -1,0 +1,172 @@
+---
+MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/sycl/huffman/cuda_helpers.h'
+Replacements:
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#define DPCT_PROFILING_ENABLED\n#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          373
+    Length:          0
+    ReplacementText: ' try '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          409
+    Length:          26
+    ReplacementText: 'count = dpct::dev_mgr::instance().device_count()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          558
+    Length:          14
+    ReplacementText: 'dpct::device_info'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          585
+    Length:          33
+    ReplacementText: 'DPCT_CHECK_ERROR(dpct::get_device_info(prop, dpct::dev_mgr::instance().get_device(i)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          622
+    Length:          11
+    ReplacementText: '0'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          638
+    Length:          0
+    ReplacementText: "\t\t\t/*\n\t\t\tDPCT1005:23: The SYCL device version is different from CUDA Compute Compatibility. You may need to rewrite this code.\n\t\t\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          649
+    Length:          5
+    ReplacementText: 'get_major_version()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          792
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1093:22: The \"i\" device may be not the one intended for use. Adjust the selected device if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          793
+    Length:          13
+    ReplacementText: 'dpct::select_device'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Offset:          863
+    Length:          0
+    ReplacementText: "\ncatch (sycl::exception const &exc) {\n  std::cerr << exc.what() << \"Exception caught at file:\" << __FILE__ << \", line:\" << __LINE__ << std::endl;\n  std::exit(1);\n}"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cuda_helpers.h'
+    Digest:          c40808d5b15f118d04c0c017f62b3041
+DpctVersion:     2024.2.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...

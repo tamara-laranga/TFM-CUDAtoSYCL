@@ -1,0 +1,36 @@
+[
+    {
+        "command": "nvcc -c  -O3 -m64 --cuda-noopt-device-debug -std=c++11 -I /include -D__CUDACC__=1 main_test_cu.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/main_test_cu.cu"
+    },
+    {
+        "command": "c++ -c -o stats_logger.o stats_logger.cpp",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/stats_logger.cpp"
+    },
+    {
+        "command": "nvcc -c  -O3 -m64 --cuda-noopt-device-debug -std=c++11 -D__CUDACC__=1 vlc_kernel_sm64huff.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/vlc_kernel_sm64huff.cu"
+    },
+    {
+        "command": "nvcc -c  -O3 -m64 --cuda-noopt-device-debug -std=c++11 -D__CUDACC__=1 scan.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/scan.cu"
+    },
+    {
+        "command": "nvcc -c  -O3 -m64 --cuda-noopt-device-debug -std=c++11 -D__CUDACC__=1 pack_kernels.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/pack_kernels.cu"
+    },
+    {
+        "command": "c++ -c -o cpuencode.o cpuencode.cpp",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman/cpuencode.cpp"
+    },
+    {
+        "command": "nvcc  -O3 -m64 --cuda-noopt-device-debug -std=c++11 main_test_cu.o stats_logger.o vlc_kernel_sm64huff.o scan.o pack_kernels.o cpuencode.o -o pavle -D__CUDACC__=1",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/huffman"
+    }
+]
