@@ -1,0 +1,12 @@
+[
+    {
+        "command": "nvcc -c  -I/usr/local/cuda/include -O3 -o particlefilter_naive -D__CUDACC__=1 ex_particle_CUDA_naive_seq.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/particlefilter",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/particlefilter/ex_particle_CUDA_naive_seq.cu"
+    },
+    {
+        "command": "nvcc -c  -I/usr/local/cuda/include -O3 -o particlefilter_float -D__CUDACC__=1 ex_particle_CUDA_float_seq.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/particlefilter",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/particlefilter/ex_particle_CUDA_float_seq.cu"
+    }
+]
