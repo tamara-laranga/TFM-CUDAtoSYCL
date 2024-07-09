@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  -o needle -I/usr/local/cuda/include -D__CUDACC__=1 needle.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/nw",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/nw/needle.cu"
+    }
+]
