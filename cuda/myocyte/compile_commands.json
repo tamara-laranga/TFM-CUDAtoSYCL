@@ -1,0 +1,11 @@
+[
+    {
+        "command": "nvcc -c  -O3 -D__CUDACC__=1 main.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/main.cu"
+    },
+    {
+        "command": "nvcc  main.o -I/usr/local/cuda/include -o myocyte.out -D__CUDACC__=1",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte"
+    }
+]

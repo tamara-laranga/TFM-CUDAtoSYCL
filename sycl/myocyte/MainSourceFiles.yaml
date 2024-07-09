@@ -1,0 +1,3665 @@
+---
+MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/MainSrcFiles_placehold'
+Replacements:
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8_2.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8_2.cu'
+    Offset:          7930
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:5: The total declared local variable size in device function embedded_fehlberg_7_8_2 exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\nSYCL_EXTERNAL "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8_2.cu'
+    Offset:          19765
+    Length:          145
+    ReplacementText: 'sycl::fabs(err_factor * (finavalu_temp[0*EQUATIONS+i] + finavalu_temp[10*EQUATIONS+i] - finavalu_temp[11*EQUATIONS+i] - finavalu_temp[12*EQUATIONS+i]))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Offset:          858
+    Length:          11
+    ReplacementText: 'SYCL_EXTERNAL '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Offset:          995
+    Length:          0
+    ReplacementText: ",\n\t\t\t\t\t\t\t\t\t\tconst sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Offset:          2349
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Offset:          2427
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_2.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_2.cu'
+    Offset:          858
+    Length:          11
+    ReplacementText: 'SYCL_EXTERNAL '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_2.cu'
+    Offset:          4989
+    Length:          18
+    ReplacementText: 'sycl::isnan(finavalu[i])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_2.cu'
+    Offset:          5110
+    Length:          18
+    ReplacementText: 'sycl::isinf(finavalu[i])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          164
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:1: The total declared local variable size in device function kernel_cam exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\nSYCL_EXTERNAL "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          7541
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          7583
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          7695
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          7742
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8021
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8078
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8142
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8504
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8617
+    Length:          8
+    ReplacementText: 'T * T'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8634
+    Length:          8
+    ReplacementText: 'dpct::pow(T, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Offset:          8730
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          164
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:4: The total declared local variable size in device function kernel_cam_2 exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\nSYCL_EXTERNAL "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          7551
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          7593
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          7705
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          7752
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8031
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8088
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8152
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8514
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8627
+    Length:          8
+    ReplacementText: 'T * T'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8644
+    Length:          8
+    ReplacementText: 'dpct::pow(T, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Offset:          8740
+    Length:          9
+    ReplacementText: 'Ca * Ca'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          178
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:0: The total declared local variable size in device function kernel_ecc exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\nSYCL_EXTERNAL "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          15186
+    Length:          17
+    ReplacementText: 'cellRadius * cellRadius'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16249
+    Length:          22
+    ReplacementText: 'sycl::log(Nao/d_initvalu_32)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16313
+    Length:          22
+    ReplacementText: 'sycl::log(Nao/d_initvalu_33)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16373
+    Length:          21
+    ReplacementText: 'sycl::log(Ko/d_initvalu_35)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16441
+    Length:          22
+    ReplacementText: 'sycl::log(Cao/d_initvalu_36)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16506
+    Length:          22
+    ReplacementText: 'sycl::log(Cao/d_initvalu_37)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          16567
+    Length:          12
+    ReplacementText: 'sycl::log(Cli/Clo)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20468
+    Length:          31
+    ReplacementText: 'sycl::exp(-0.1*(d_initvalu_39+47.13))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20514
+    Length:          22
+    ReplacementText: 'sycl::exp(-d_initvalu_39/11)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20604
+    Length:          32
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+10.66)/11.1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20652
+    Length:          28
+    ReplacementText: 'sycl::exp(-2.535e-7*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20684
+    Length:          28
+    ReplacementText: 'sycl::exp(-0.1*(d_initvalu_39+32))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20741
+    Length:          28
+    ReplacementText: 'sycl::exp((80+d_initvalu_39)/-6.8)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20784
+    Length:          24
+    ReplacementText: 'sycl::exp(0.079*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20815
+    Length:          23
+    ReplacementText: 'sycl::exp(0.35*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20857
+    Length:          25
+    ReplacementText: 'sycl::exp(0.2444*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20892
+    Length:          27
+    ReplacementText: 'sycl::exp(-0.04391*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20946
+    Length:          32
+    ReplacementText: 'sycl::exp(0.311*(d_initvalu_39+79.23))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          20996
+    Length:          27
+    ReplacementText: 'sycl::exp(-0.01052*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21027
+    Length:          34
+    ReplacementText: 'sycl::exp(-0.1378*(d_initvalu_39+40.14))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21278
+    Length:          19
+    ReplacementText: 'dpct::pow(d_initvalu_1, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21370
+    Length:          19
+    ReplacementText: 'dpct::pow(d_initvalu_1, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21688
+    Length:          13
+    ReplacementText: 'sycl::exp(Nao/67.3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21729
+    Length:          28
+    ReplacementText: 'sycl::exp(-0.1*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21771
+    Length:          24
+    ReplacementText: 'sycl::exp(-d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21839
+    Length:          29
+    ReplacementText: 'dpct::pow((KmNaip/d_initvalu_32), 4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          21919
+    Length:          29
+    ReplacementText: 'dpct::pow((KmNaip/d_initvalu_33), 4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22048
+    Length:          12
+    ReplacementText: 'sycl::sqrt(Ko/5.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22076
+    Length:          28
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+50)/7.5)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22149
+    Length:          29
+    ReplacementText: 'sycl::exp(-0.123*(d_initvalu_39+7))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22207
+    Length:          29
+    ReplacementText: 'sycl::exp(0.145*(d_initvalu_39+10))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22309
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33)/22.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22448
+    Length:          20
+    ReplacementText: 'sycl::log10(d_initvalu_36)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22489
+    Length:          20
+    ReplacementText: 'sycl::log10(d_initvalu_37)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22552
+    Length:          26
+    ReplacementText: 'sycl::exp((-7.2+pcaks_junc)/0.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22615
+    Length:          24
+    ReplacementText: 'sycl::exp((-7.2+pcaks_sl)/0.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22661
+    Length:          53
+    ReplacementText: 'sycl::log((Ko+pNaK*Nao)/(d_initvalu_35+pNaK*d_initvalu_34))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22731
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39-1.5)/16.7)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22807
+    Length:          30
+    ReplacementText: 'sycl::exp(-0.148*(d_initvalu_39+30))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22867
+    Length:          30
+    ReplacementText: 'sycl::exp(0.0687*(d_initvalu_39+30))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          22987
+    Length:          20
+    ReplacementText: 'd_initvalu_12 * d_initvalu_12'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23052
+    Length:          20
+    ReplacementText: 'd_initvalu_13 * d_initvalu_13'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23168
+    Length:          29
+    ReplacementText: 'sycl::exp(7.488-d_initvalu_39/5.98)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23407
+    Length:          28
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+3.0)/15)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23453
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23499
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23547
+    Length:          27
+    ReplacementText: 'sycl::exp((d_initvalu_39+3.0)/15)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23600
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+60.0)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23654
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+60.0)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          23983
+    Length:          39
+    ReplacementText: 'sycl::exp(-d_initvalu_39*d_initvalu_39/30/30)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24048
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24344
+    Length:          37
+    ReplacementText: 'sycl::exp(0.2385*(d_initvalu_39-ek-59.215))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24400
+    Length:          37
+    ReplacementText: 'sycl::exp(0.08032*(d_initvalu_39+5.476-ek))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24440
+    Length:          38
+    ReplacementText: 'sycl::exp(0.06175*(d_initvalu_39-ek-594.31))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24486
+    Length:          37
+    ReplacementText: 'sycl::exp(-0.5143*(d_initvalu_39-ek+4.753))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24563
+    Length:          12
+    ReplacementText: 'sycl::sqrt(Ko/5.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24935
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+14.5)/6.0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          24984
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+14.5)/6.0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25059
+    Length:          30
+    ReplacementText: 'sycl::exp((d_initvalu_39+35.06)/3.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25098
+    Length:          26
+    ReplacementText: 'sycl::exp((50-d_initvalu_39)/20)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25146
+    Length:          40
+    ReplacementText: 'sycl::exp(-(0.0337*(d_initvalu_39+14.5)) * (0.0337*(d_initvalu_39+14.5)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25577
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25616
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25715
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25754
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25843
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25878
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          25970
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26007
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26100
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26137
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26242
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26340
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26543
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26646
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26746
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26893
+    Length:          28
+    ReplacementText: 'dpct::pow((Kdact/d_initvalu_36), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26939
+    Length:          28
+    ReplacementText: 'dpct::pow((Kdact/d_initvalu_37), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          26982
+    Length:          26
+    ReplacementText: 'sycl::exp(nu*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27009
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27045
+    Length:          26
+    ReplacementText: 'sycl::exp(nu*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27072
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27110
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27141
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27186
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27200
+    Length:          28
+    ReplacementText: 'dpct::pow((d_initvalu_32/KmNai), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27230
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27258
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNai, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27305
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27326
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27351
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27385
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27428
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27459
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27502
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27516
+    Length:          28
+    ReplacementText: 'dpct::pow((d_initvalu_33/KmNai), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27548
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27575
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNai, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27622
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27643
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27668
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27702
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27764
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10NCX, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          27841
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10NCX, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28035
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SLCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28064
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_36, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28092
+    Length:          18
+    ReplacementText: 'dpct::pow(KmPCa, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28111
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_36, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28157
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SLCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28186
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_37, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28214
+    Length:          18
+    ReplacementText: 'dpct::pow(KmPCa, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28233
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_37, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28711
+    Length:          33
+    ReplacementText: 'dpct::pow(ec50SR/d_initvalu_31, fp(2.5))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          28923
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29019
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29243
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29373
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SRCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29404
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_38/Kmf), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29439
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_31/Kmr), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29491
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_38/Kmf), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          29526
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_31/Kmr), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Offset:          33929
+    Length:          26
+    ReplacementText: 'sycl::fmod(timeinst, cycleLength)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          178
+    Length:          11
+    ReplacementText: "/*\nDPCT1110:3: The total declared local variable size in device function kernel_ecc_2 exceeds 128 bytes and may cause high register pressure. Consult with your hardware vendor to find the total register size available and adjust the code, or use smaller sub-group size to avoid high register pressure.\n*/\nSYCL_EXTERNAL "
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          15192
+    Length:          17
+    ReplacementText: 'cellRadius * cellRadius'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16255
+    Length:          22
+    ReplacementText: 'sycl::log(Nao/d_initvalu_32)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16319
+    Length:          22
+    ReplacementText: 'sycl::log(Nao/d_initvalu_33)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16379
+    Length:          21
+    ReplacementText: 'sycl::log(Ko/d_initvalu_35)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16447
+    Length:          22
+    ReplacementText: 'sycl::log(Cao/d_initvalu_36)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16512
+    Length:          22
+    ReplacementText: 'sycl::log(Cao/d_initvalu_37)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          16573
+    Length:          12
+    ReplacementText: 'sycl::log(Cli/Clo)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20474
+    Length:          31
+    ReplacementText: 'sycl::exp(-0.1*(d_initvalu_39+47.13))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20520
+    Length:          22
+    ReplacementText: 'sycl::exp(-d_initvalu_39/11)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20610
+    Length:          32
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+10.66)/11.1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20658
+    Length:          28
+    ReplacementText: 'sycl::exp(-2.535e-7*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20690
+    Length:          28
+    ReplacementText: 'sycl::exp(-0.1*(d_initvalu_39+32))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20747
+    Length:          28
+    ReplacementText: 'sycl::exp((80+d_initvalu_39)/-6.8)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20790
+    Length:          24
+    ReplacementText: 'sycl::exp(0.079*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20821
+    Length:          23
+    ReplacementText: 'sycl::exp(0.35*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20863
+    Length:          25
+    ReplacementText: 'sycl::exp(0.2444*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20898
+    Length:          27
+    ReplacementText: 'sycl::exp(-0.04391*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          20952
+    Length:          32
+    ReplacementText: 'sycl::exp(0.311*(d_initvalu_39+79.23))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21002
+    Length:          27
+    ReplacementText: 'sycl::exp(-0.01052*d_initvalu_39)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21033
+    Length:          34
+    ReplacementText: 'sycl::exp(-0.1378*(d_initvalu_39+40.14))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21284
+    Length:          19
+    ReplacementText: 'dpct::pow(d_initvalu_1, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21376
+    Length:          19
+    ReplacementText: 'dpct::pow(d_initvalu_1, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21694
+    Length:          13
+    ReplacementText: 'sycl::exp(Nao/67.3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21735
+    Length:          28
+    ReplacementText: 'sycl::exp(-0.1*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21777
+    Length:          24
+    ReplacementText: 'sycl::exp(-d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21845
+    Length:          29
+    ReplacementText: 'dpct::pow((KmNaip/d_initvalu_32), 4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          21925
+    Length:          29
+    ReplacementText: 'dpct::pow((KmNaip/d_initvalu_33), 4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22054
+    Length:          12
+    ReplacementText: 'sycl::sqrt(Ko/5.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22082
+    Length:          28
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+50)/7.5)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22155
+    Length:          29
+    ReplacementText: 'sycl::exp(-0.123*(d_initvalu_39+7))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22213
+    Length:          29
+    ReplacementText: 'sycl::exp(0.145*(d_initvalu_39+10))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22315
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33)/22.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22454
+    Length:          20
+    ReplacementText: 'sycl::log10(d_initvalu_36)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22495
+    Length:          20
+    ReplacementText: 'sycl::log10(d_initvalu_37)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22558
+    Length:          26
+    ReplacementText: 'sycl::exp((-7.2+pcaks_junc)/0.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22621
+    Length:          24
+    ReplacementText: 'sycl::exp((-7.2+pcaks_sl)/0.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22667
+    Length:          53
+    ReplacementText: 'sycl::log((Ko+pNaK*Nao)/(d_initvalu_35+pNaK*d_initvalu_34))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22737
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39-1.5)/16.7)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22813
+    Length:          30
+    ReplacementText: 'sycl::exp(-0.148*(d_initvalu_39+30))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22873
+    Length:          30
+    ReplacementText: 'sycl::exp(0.0687*(d_initvalu_39+30))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          22993
+    Length:          20
+    ReplacementText: 'd_initvalu_12 * d_initvalu_12'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23058
+    Length:          20
+    ReplacementText: 'd_initvalu_13 * d_initvalu_13'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23174
+    Length:          29
+    ReplacementText: 'sycl::exp(7.488-d_initvalu_39/5.98)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23413
+    Length:          28
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+3.0)/15)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23459
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23505
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23553
+    Length:          27
+    ReplacementText: 'sycl::exp((d_initvalu_39+3.0)/15)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23606
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+60.0)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23660
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+60.0)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          23989
+    Length:          39
+    ReplacementText: 'sycl::exp(-d_initvalu_39*d_initvalu_39/30/30)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24054
+    Length:          28
+    ReplacementText: 'sycl::exp((d_initvalu_39+33.5)/10)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24350
+    Length:          37
+    ReplacementText: 'sycl::exp(0.2385*(d_initvalu_39-ek-59.215))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24406
+    Length:          37
+    ReplacementText: 'sycl::exp(0.08032*(d_initvalu_39+5.476-ek))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24446
+    Length:          38
+    ReplacementText: 'sycl::exp(0.06175*(d_initvalu_39-ek-594.31))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24492
+    Length:          37
+    ReplacementText: 'sycl::exp(-0.5143*(d_initvalu_39-ek+4.753))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24569
+    Length:          12
+    ReplacementText: 'sycl::sqrt(Ko/5.4)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24941
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+14.5)/6.0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          24990
+    Length:          30
+    ReplacementText: 'sycl::exp(-(d_initvalu_39+14.5)/6.0)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25065
+    Length:          30
+    ReplacementText: 'sycl::exp((d_initvalu_39+35.06)/3.6)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25104
+    Length:          26
+    ReplacementText: 'sycl::exp((50-d_initvalu_39)/20)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25152
+    Length:          40
+    ReplacementText: 'sycl::exp(-(0.0337*(d_initvalu_39+14.5)) * (0.0337*(d_initvalu_39+14.5)))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25583
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25622
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25721
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25760
+    Length:          25
+    ReplacementText: 'sycl::exp(2*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25849
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25884
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          25976
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26013
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26106
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26143
+    Length:          23
+    ReplacementText: 'sycl::exp(d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26248
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26346
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26549
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26652
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26752
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10CaL, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26899
+    Length:          28
+    ReplacementText: 'dpct::pow((Kdact/d_initvalu_36), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26945
+    Length:          28
+    ReplacementText: 'dpct::pow((Kdact/d_initvalu_37), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          26988
+    Length:          26
+    ReplacementText: 'sycl::exp(nu*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27015
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27051
+    Length:          26
+    ReplacementText: 'sycl::exp(nu*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27078
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27116
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27147
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27192
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27206
+    Length:          28
+    ReplacementText: 'dpct::pow((d_initvalu_32/KmNai), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27236
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27264
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNai, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27311
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27332
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_32, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27357
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27391
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27434
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27465
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27508
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27522
+    Length:          28
+    ReplacementText: 'dpct::pow((d_initvalu_33/KmNai), 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27554
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27581
+    Length:          12
+    ReplacementText: 'dpct::pow(KmNai, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27628
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27649
+    Length:          20
+    ReplacementText: 'dpct::pow(d_initvalu_33, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27674
+    Length:          10
+    ReplacementText: 'dpct::pow(Nao, 3)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27708
+    Length:          30
+    ReplacementText: 'sycl::exp((nu-1)*d_initvalu_39*FoRT)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27770
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10NCX, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          27847
+    Length:          16
+    ReplacementText: 'dpct::pow(Q10NCX, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28041
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SLCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28070
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_36, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28098
+    Length:          18
+    ReplacementText: 'dpct::pow(KmPCa, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28117
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_36, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28163
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SLCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28192
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_37, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28220
+    Length:          18
+    ReplacementText: 'dpct::pow(KmPCa, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28239
+    Length:          26
+    ReplacementText: 'dpct::pow(d_initvalu_37, fp(1.6))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28717
+    Length:          33
+    ReplacementText: 'dpct::pow(ec50SR/d_initvalu_31, fp(2.5))'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          28929
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29025
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29249
+    Length:          20
+    ReplacementText: 'd_initvalu_36 * d_initvalu_36'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29379
+    Length:          18
+    ReplacementText: 'dpct::pow(Q10SRCaP, Qpow)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29410
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_38/Kmf), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29445
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_31/Kmr), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29497
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_38/Kmf), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          29532
+    Length:          34
+    ReplacementText: 'dpct::pow((d_initvalu_31/Kmr), hillSRCaP)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Offset:          33935
+    Length:          26
+    ReplacementText: 'sycl::fmod(timeinst, cycleLength)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_fin_2.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_fin_2.cu'
+    Offset:          164
+    Length:          11
+    ReplacementText: 'SYCL_EXTERNAL '
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/main.cu'
+    Offset:          8107
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/main.cu'
+    Offset:          8254
+    Length:          18
+    ReplacementText: '#include "work.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/main.cu'
+    Offset:          8274
+    Length:          20
+    ReplacementText: '#include "work_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          0
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n#include <cmath>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          350
+    Length:          0
+    ReplacementText: "\n dpct::device_ext &dev_ct1 = dpct::get_current_device();\n sycl::queue &q_ct1 = dev_ct1.in_order_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          797
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          809
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          813
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          824
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1284
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1331
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1360
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1404
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1429
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1435
+    Length:          9
+    ReplacementText: 'threads[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1465
+    Length:          9
+    ReplacementText: 'threads[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1482
+    Length:          8
+    ReplacementText: 'blocks[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1498
+    Length:          8
+    ReplacementText: 'blocks[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1513
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:2: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1514
+    Length:          143
+    ReplacementText: "q_ct1.parallel_for(\n\t  sycl::nd_range<3>(blocks * threads, threads), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    kernel(timeinst, d_initvalu, d_finavalu, d_params, d_com, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1657
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1663
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1710
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1739
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1771
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Offset:          1796
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver.cu'
+    Offset:          4538
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver.cu'
+    Offset:          9818
+    Length:          48
+    ReplacementText: 'pow(tolerance * yy[i] / err[i], err_exponent)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          631
+    Length:          0
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          1466
+    Length:          11
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          1739
+    Length:          0
+    ReplacementText: ",\n\t\t\t\t\t\t\t\t\t\t\tconst sycl::nd_item<3> &item_ct1"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          3001
+    Length:          10
+    ReplacementText: 'item_ct1.get_group(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          3079
+    Length:          11
+    ReplacementText: 'item_ct1.get_local_id(2)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          7714
+    Length:          28
+    ReplacementText: 'sycl::fabs(y[y_pointer_initial+i])'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Offset:          7789
+    Length:          71
+    ReplacementText: 'dpct::pow(tolerance * yy[yy_pointer+i] / err[err_pointer+i], err_exponent)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          237
+    Length:          24
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n#include \"kernel_ecc.dp.cpp\""
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          263
+    Length:          24
+    ReplacementText: '#include "kernel_cam.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          289
+    Length:          24
+    ReplacementText: '#include "kernel_fin.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          315
+    Length:          20
+    ReplacementText: '#include "kernel.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          337
+    Length:          20
+    ReplacementText: '#include "master.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          359
+    Length:          35
+    ReplacementText: '#include "embedded_fehlberg_7_8.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          396
+    Length:          20
+    ReplacementText: '#include "solver.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          693
+    Length:          0
+    ReplacementText: "\n dpct::device_ext &dev_ct1 = dpct::get_current_device();\n sycl::queue &q_ct1 = dev_ct1.in_order_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          3097
+    Length:          48
+    ReplacementText: 'd_initvalu = (float *)sycl::malloc_device(d_initvalu_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          3234
+    Length:          48
+    ReplacementText: 'd_finavalu = (float *)sycl::malloc_device(d_finavalu_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          3366
+    Length:          44
+    ReplacementText: 'd_params = (float *)sycl::malloc_device(d_params_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          3476
+    Length:          38
+    ReplacementText: 'd_com = (float *)sycl::malloc_device(d_com_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          5549
+    Length:          20
+    ReplacementText: 'dpct::dpct_free(d_initvalu, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          5573
+    Length:          20
+    ReplacementText: 'dpct::dpct_free(d_finavalu, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          5597
+    Length:          18
+    ReplacementText: 'dpct::dpct_free(d_params, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Offset:          5619
+    Length:          15
+    ReplacementText: 'dpct::dpct_free(d_com, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          238
+    Length:          26
+    ReplacementText: "#include <sycl/sycl.hpp>\n#include <dpct/dpct.hpp>\n#include \"kernel_fin_2.dp.cpp\""
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          266
+    Length:          26
+    ReplacementText: '#include "kernel_ecc_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          294
+    Length:          26
+    ReplacementText: '#include "kernel_cam_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          322
+    Length:          22
+    ReplacementText: '#include "kernel_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          346
+    Length:          37
+    ReplacementText: '#include "embedded_fehlberg_7_8_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          385
+    Length:          22
+    ReplacementText: '#include "solver_2.dp.cpp"'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          688
+    Length:          0
+    ReplacementText: "\n dpct::device_ext &dev_ct1 = dpct::get_current_device();\n sycl::queue &q_ct1 = dev_ct1.in_order_queue();"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          2258
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          2270
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          2274
+    Length:          4
+    ReplacementText: 'sycl::range<3>'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          2285
+    Length:          0
+    ReplacementText: '(1, 1, 1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3281
+    Length:          32
+    ReplacementText: 'd_y = (float *)sycl::malloc_device(y_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3390
+    Length:          32
+    ReplacementText: 'd_x = (float *)sycl::malloc_device(x_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3516
+    Length:          42
+    ReplacementText: 'd_params = (float *)sycl::malloc_device(params_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3732
+    Length:          36
+    ReplacementText: 'd_com = (float *)sycl::malloc_device(com_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3821
+    Length:          36
+    ReplacementText: 'd_err = (float *)sycl::malloc_device(err_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          3912
+    Length:          40
+    ReplacementText: 'd_scale = (float *)sycl::malloc_device(scale_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4004
+    Length:          34
+    ReplacementText: 'd_yy = (float *)sycl::malloc_device(yy_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4101
+    Length:          56
+    ReplacementText: 'd_initvalu_temp = (float *)sycl::malloc_device(initvalu_temp_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4224
+    Length:          56
+    ReplacementText: 'd_finavalu_temp = (float *)sycl::malloc_device(finavalu_temp_mem, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4717
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4741
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          4766
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5046
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5070
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5095
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5364
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5403
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5428
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5700
+    Length:          9
+    ReplacementText: 'threads[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5782
+    Length:          9
+    ReplacementText: 'threads[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5800
+    Length:          8
+    ReplacementText: 'blocks[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5879
+    Length:          8
+    ReplacementText: 'blocks[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5908
+    Length:          9
+    ReplacementText: 'threads[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          5995
+    Length:          9
+    ReplacementText: 'threads[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6033
+    Length:          9
+    ReplacementText: 'threads[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6062
+    Length:          9
+    ReplacementText: 'threads[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6189
+    Length:          8
+    ReplacementText: 'blocks[2]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6272
+    Length:          8
+    ReplacementText: 'blocks[1]'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6293
+    Length:          0
+    ReplacementText: "\t/*\n\tDPCT1049:6: The work-group size passed to the SYCL kernel may exceed the limit. To get the device limit, query info::device::max_work_group_size. Adjust the work-group size if needed.\n\t*/\n"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6294
+    Length:          303
+    ReplacementText: "q_ct1.parallel_for(\n\t  sycl::nd_range<3>(blocks * threads, threads), \n\t  [=](sycl::nd_item<3> item_ct1) {\n\t    solver_2(workload, xmax, d_x, d_y, d_params, d_com, d_err, d_scale, d_yy, d_initvalu_temp, d_finavalu_temp, item_ct1);\n\t  });"
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: true
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6597
+    Length:          1
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6936
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6960
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          6989
+    Length:          10
+    ReplacementText: q_ct1.memcpy
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          7013
+    Length:          24
+    ReplacementText: ''
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          7038
+    Length:          0
+    ReplacementText: '.wait()'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8218
+    Length:          13
+    ReplacementText: 'dpct::dpct_free(d_y, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8248
+    Length:          13
+    ReplacementText: 'dpct::dpct_free(d_x, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8283
+    Length:          18
+    ReplacementText: 'dpct::dpct_free(d_params, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8476
+    Length:          15
+    ReplacementText: 'dpct::dpct_free(d_com, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8497
+    Length:          15
+    ReplacementText: 'dpct::dpct_free(d_err, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8516
+    Length:          17
+    ReplacementText: 'dpct::dpct_free(d_scale, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8537
+    Length:          14
+    ReplacementText: 'dpct::dpct_free(d_yy, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8557
+    Length:          25
+    ReplacementText: 'dpct::dpct_free(d_initvalu_temp, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+  - FilePath:        '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Offset:          8586
+    Length:          25
+    ReplacementText: 'dpct::dpct_free(d_finavalu_temp, q_ct1)'
+    ConstantFlag:    ''
+    ConstantOffset:  0
+    InitStr:         ''
+    NewHostVarName:  ''
+    BlockLevelFormatFlag: false
+MainSourceFilesDigest:
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8.cu'
+    Digest:          937246ecb1ebc8fbf03b374996ada1e0
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/embedded_fehlberg_7_8_2.cu'
+    Digest:          ec90b38a5daa50eae2377737568e50ab
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel.cu'
+    Digest:          41d886313d5a5a588a02e39997e15f04
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_2.cu'
+    Digest:          3a0c7e9125e134c2c1407fea84cee1eb
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam.cu'
+    Digest:          8eeb870be4ab9bb79913efa7305c064a
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_cam_2.cu'
+    Digest:          aaa6f2c6de9194933d827bb8b833786b
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc.cu'
+    Digest:          0f47490c02b32b41aa75714618d92290
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_ecc_2.cu'
+    Digest:          64fe6c88a6db001aa344b8a573f43cc0
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/kernel_fin_2.cu'
+    Digest:          d86a699c5b6bf05625fb5994ba55946e
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/main.cu'
+    Digest:          fadfc4e7d72107be5465cda27a61ac30
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/master.cu'
+    Digest:          6378b72a8b28beb57b9d24b919bab519
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver.cu'
+    Digest:          ae0bce772dea050d1d13bd144fb7406f
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/solver_2.cu'
+    Digest:          bac998e41e1ba1c433453dced87858db
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work.cu'
+    Digest:          15d5d1e461335dba5ee6fdd52c971e29
+  - MainSourceFile:  '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte/work_2.cu'
+    Digest:          130d0ebba889b9f212431edb1d7384d5
+DpctVersion:     2024.2.0
+MainHelperFileName: ''
+USMLevel:        ''
+FeatureMap:      {}
+CompileTargets:  {}
+OptionMap:
+  AnalysisScopePath:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte'
+    Specified:       false
+  AsyncHandler:
+    Value:           'false'
+    Specified:       false
+  BuildScript:
+    Value:           '0'
+    Specified:       false
+  CodePinEnabled:
+    Value:           'false'
+    Specified:       false
+  CommentsEnabled:
+    Value:           'false'
+    Specified:       false
+  CompilationsDir:
+    Value:           '/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/myocyte'
+    Specified:       true
+  CtadEnabled:
+    Value:           'false'
+    Specified:       false
+  EnablepProfiling:
+    Value:           'false'
+    Specified:       false
+  ExperimentalFlag:
+    Value:           '0'
+    Specified:       false
+  ExplicitNamespace:
+    Value:           '20'
+    Specified:       false
+  ExtensionDDFlag:
+    Value:           '0'
+    Specified:       false
+  ExtensionDEFlag:
+    Value:           '4294967295'
+    Specified:       false
+  HelperFuncPreferenceFlag:
+    Value:           '0'
+    Specified:       false
+  NDRangeDim:
+    Value:           '3'
+    Specified:       false
+  NoDRYPattern:
+    Value:           'false'
+    Specified:       false
+  OptimizeMigration:
+    Value:           'false'
+    Specified:       false
+  ProcessAll:
+    Value:           'false'
+    Specified:       false
+  RuleFile:
+    Value:           ''
+    Specified:       false
+  SyclNamedLambda:
+    Value:           'false'
+    Specified:       false
+  UsmLevel:
+    Value:           '1'
+    Specified:       false
+...
