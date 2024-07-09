@@ -1,0 +1,21 @@
+[
+    {
+        "command": "nvcc -c  -I../common -O3 -DGPU_TIMER -o ../common/common.o -D__CUDACC__=1 ../common/common.c",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/common/common.c"
+    },
+    {
+        "command": "nvcc -c  -I../common -O3 -DGPU_TIMER -o lud.o -D__CUDACC__=1 lud.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda/lud.cu"
+    },
+    {
+        "command": "nvcc -c  -I../common -O3 -DGPU_TIMER -o lud_kernel.o -D__CUDACC__=1 lud_kernel.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda/lud_kernel.cu"
+    },
+    {
+        "command": "nvcc  -I../common -O3 -o lud_cuda ../common/common.o lud.o lud_kernel.o -D__CUDACC__=1",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/lud/cuda"
+    }
+]
