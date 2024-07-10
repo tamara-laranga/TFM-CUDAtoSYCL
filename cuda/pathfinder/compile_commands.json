@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  -o pathfinder -I/usr/local/cuda/include -D__CUDACC__=1 pathfinder.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/pathfinder",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/pathfinder/pathfinder.cu"
+    }
+]
