@@ -1,7 +1,7 @@
 include ../../common/make.config
 CC := nvcc
 
-CC_FLAGS = -I/usr/include/GL
+CC_FLAGS = 
 
 ifdef VERIFY
 override VERIFY = -DVERIFY
