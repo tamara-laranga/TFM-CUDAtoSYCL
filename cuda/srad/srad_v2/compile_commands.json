@@ -1,0 +1,7 @@
+[
+    {
+        "command": "nvcc -c  -o srad -I/usr/local/cuda/include -D__CUDACC__=1 srad.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/srad/srad_v2",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/srad/srad_v2/srad.cu"
+    }
+]
