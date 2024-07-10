@@ -1,0 +1,17 @@
+[
+    {
+        "command": "nvcc -c  -I/usr/local/cuda/include -O3 -o sc_gpu -D__CUDACC__=1 streamcluster_cuda_cpu.cpp",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster/streamcluster_cuda_cpu.cpp"
+    },
+    {
+        "command": "nvcc -c  -I/usr/local/cuda/include -O3 -o sc_gpu -D__CUDACC__=1 streamcluster_cuda.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster/streamcluster_cuda.cu"
+    },
+    {
+        "command": "nvcc -c  -I/usr/local/cuda/include -O3 -o sc_gpu -D__CUDACC__=1 streamcluster_header.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/streamcluster/streamcluster_header.cu"
+    }
+]
