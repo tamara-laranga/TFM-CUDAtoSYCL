@@ -106,57 +106,90 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
 	//	knodesD
 	//==================================================50
 
+	//knode *knodesD;
+    //    knodesD = (knode *)sycl::malloc_device(knodes_mem, dpct::get_in_order_queue());
+    //    checkCUDAError("cudaMalloc  recordsD");
+
 	knode *knodesD;
-        knodesD = (knode *)sycl::malloc_device(knodes_mem, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc  recordsD");
+	try {
+		knodesD = static_cast<knode *>(sycl::malloc_device(knodes_mem, dpct::get_in_order_queue()));
+		// No need for checkCUDAError as SYCL throws exceptions on errors
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for knodesD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	currKnodeD
 	//==================================================50
 
 	long *currKnodeD;
+	try {
         currKnodeD = sycl::malloc_device<long>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc  currKnodeD");
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for currKnodeD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	offsetD
 	//==================================================50
 
 	long *offsetD;
-        offsetD = sycl::malloc_device<long>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc  offsetD");
+	try{
+		offsetD = sycl::malloc_device<long>(count, dpct::get_in_order_queue());
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for offsetD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	lastKnodeD
 	//==================================================50
 
 	long *lastKnodeD;
+	try{
         lastKnodeD = sycl::malloc_device<long>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc  lastKnodeD");
+	} catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for lastKnodeD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	offset_2D
 	//==================================================50
 
 	long *offset_2D;
+	try {
         offset_2D = sycl::malloc_device<long>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc  offset_2D");
+	} catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for offset_2D", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	startD
 	//==================================================50
 
 	int *startD;
-        startD = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc startD");
+	try {
+		startD = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
+	} catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for startD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	endD
 	//==================================================50
 
 	int *endD;
-        endD = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc endD");
+	try{
+		endD = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
+	} catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for endD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//====================================================================================================100
 	//	DEVICE IN/OUT
@@ -167,16 +200,24 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
 	//==================================================50
 
 	int *ansDStart;
+	try {
         ansDStart = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc ansDStart");
+	} catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for ansDStart", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	ansDLength
 	//==================================================50
 
 	int *ansDLength;
+	try {
         ansDLength = sycl::malloc_device<int>(count, dpct::get_in_order_queue());
-        checkCUDAError("cudaMalloc ansDLength");
+    } catch (sycl::exception const &e){
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "malloc_device for ansDLength", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	time2 = get_time();
 
@@ -191,59 +232,82 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
 	//==================================================50
 	//	knodesD
 	//==================================================50
-
-        dpct::get_in_order_queue().memcpy(knodesD, knodes, knodes_mem).wait();
-        checkCUDAError("cudaMalloc cudaMemcpy memD");
+	try {
+		dpct::get_in_order_queue().memcpy(knodesD, knodes, knodes_mem).wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy knodesD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	currKnodeD
 	//==================================================50
+	
+	try {
+		dpct::get_in_order_queue()
+			.memcpy(currKnodeD, currKnode, count * sizeof(long))
+			.wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for currKnodeD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
-        dpct::get_in_order_queue()
-            .memcpy(currKnodeD, currKnode, count * sizeof(long))
-            .wait();
-        checkCUDAError("cudaMalloc cudaMemcpy currKnodeD");
 
 	//==================================================50
 	//	offsetD
 	//==================================================50
-
-        dpct::get_in_order_queue()
-            .memcpy(offsetD, offset, count * sizeof(long))
-            .wait();
-        checkCUDAError("cudaMalloc cudaMemcpy offsetD");
+	try{
+		dpct::get_in_order_queue()
+			.memcpy(offsetD, offset, count * sizeof(long))
+			.wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for offsetD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	lastKnodeD
 	//==================================================50
-
+	try {
         dpct::get_in_order_queue()
             .memcpy(lastKnodeD, lastKnode, count * sizeof(long))
             .wait();
-        checkCUDAError("cudaMalloc cudaMemcpy lastKnodeD");
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for lastKnodeD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	offset_2D
 	//==================================================50
-
-        dpct::get_in_order_queue()
+	try{
+		dpct::get_in_order_queue()
             .memcpy(offset_2D, offset_2, count * sizeof(long))
             .wait();
-        checkCUDAError("cudaMalloc cudaMemcpy offset_2D");
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for offset_2D", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	startD
 	//==================================================50
-
-        dpct::get_in_order_queue().memcpy(startD, start, count * sizeof(int)).wait();
-        checkCUDAError("cudaMemcpy startD");
+	try {
+		dpct::get_in_order_queue().memcpy(startD, start, count * sizeof(int)).wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for startD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	endD
 	//==================================================50
-
-        dpct::get_in_order_queue().memcpy(endD, end, count * sizeof(int)).wait();
-        checkCUDAError("cudaMemcpy endD");
+	try{
+		dpct::get_in_order_queue().memcpy(endD, end, count * sizeof(int)).wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for endD", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//====================================================================================================100
 	//	DEVICE IN/OUT
@@ -253,19 +317,27 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
 	//	ansDStart
 	//==================================================50
 
-        dpct::get_in_order_queue()
+	try {
+		dpct::get_in_order_queue()
             .memcpy(ansDStart, recstart, count * sizeof(int))
             .wait();
-        checkCUDAError("cudaMemcpy ansDStart");
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for ansDStart", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	ansDLength
 	//==================================================50
 
-        dpct::get_in_order_queue()
-            .memcpy(ansDLength, reclength, count * sizeof(int))
-            .wait();
-        checkCUDAError("cudaMemcpy ansDLength");
+	try {
+		dpct::get_in_order_queue()
+			.memcpy(ansDLength, reclength, count * sizeof(int))
+			.wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for ansDLength", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	time3 = get_time();
 
@@ -280,7 +352,8 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
          * info::device::max_work_group_size. Adjust the work-group size if
          * needed.
 	*/
-        dpct::get_in_order_queue().parallel_for(
+	try {
+		        dpct::get_in_order_queue().parallel_for(
             sycl::nd_range<3>(sycl::range<3>(1, 1, numBlocks) *
                                   sycl::range<3>(1, 1, threadsPerBlock),
                               sycl::range<3>(1, 1, threadsPerBlock)),
@@ -290,7 +363,10 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
                                ansDStart, ansDLength, item_ct1);
             });
         dpct::get_current_device().queues_wait_and_throw();
-        checkCUDAError("findRangeK");
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "parallel_for findRangeK", e.what());
+    	exit(EXIT_FAILURE);
+	}
 
 	time4 = get_time();
 
@@ -305,20 +381,26 @@ kernel_gpu_cuda_wrapper_2(	knode *knodes,
 	//==================================================50
 	//	ansDStart
 	//==================================================50
-
-        dpct::get_in_order_queue()
-            .memcpy(recstart, ansDStart, count * sizeof(int))
-            .wait();
-        checkCUDAError("cudaMemcpy ansDStart");
+	try {
+		dpct::get_in_order_queue()
+			.memcpy(recstart, ansDStart, count * sizeof(int))
+			.wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for ansDStart", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	//==================================================50
 	//	ansDLength
 	//==================================================50
-
-        dpct::get_in_order_queue()
-            .memcpy(reclength, ansDLength, count * sizeof(int))
-            .wait();
-        checkCUDAError("cudaMemcpy ansDLength");
+	try{
+		dpct::get_in_order_queue()
+			.memcpy(reclength, ansDLength, count * sizeof(int))
+			.wait();
+	} catch (sycl::exception const &e) {
+		fprintf(stderr, "SYCL exception: %s: %s.\n", "memcpy for ansDLength", e.what());
+		exit(EXIT_FAILURE);
+	}
 
 	time5 = get_time();
 
