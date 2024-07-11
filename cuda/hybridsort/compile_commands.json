@@ -1,0 +1,17 @@
+[
+    {
+        "command": "nvcc -c  -o hybridsort -D__CUDACC__=1 bucketsort.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort/bucketsort.cu"
+    },
+    {
+        "command": "nvcc -c  -o hybridsort -D__CUDACC__=1 mergesort.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort/mergesort.cu"
+    },
+    {
+        "command": "nvcc -c  -o hybridsort -D__CUDACC__=1 main.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/hybridsort/main.cu"
+    }
+]

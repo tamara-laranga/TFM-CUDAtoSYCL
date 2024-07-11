@@ -17,6 +17,8 @@
 
 #pragma once
 
+#include <sycl/sycl.hpp>
+#include <dpct/dpct.hpp>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -62,180 +64,180 @@ inline void EXIT_DELAY(int return_code)
 // on which CUDA functions are used.
 
 // CUDA Runtime error messages
-#ifdef __DRIVER_TYPES_H__
-static const char *_cudaGetErrorEnum(cudaError_t error)
+#ifdef __DPCT_HPP__
+static const char *_cudaGetErrorEnum(dpct::err0 error)
 {
     switch (error)
     {
-        case cudaSuccess:
+        case 0:
             return "cudaSuccess";
 
-        case cudaErrorMissingConfiguration:
+        case 52:
             return "cudaErrorMissingConfiguration";
 
-        case cudaErrorMemoryAllocation:
+        case 2:
             return "cudaErrorMemoryAllocation";
 
-        case cudaErrorInitializationError:
+        case 3:
             return "cudaErrorInitializationError";
 
-        case cudaErrorLaunchFailure:
+        case 719:
             return "cudaErrorLaunchFailure";
 
-        case cudaErrorPriorLaunchFailure:
+        case 53:
             return "cudaErrorPriorLaunchFailure";
 
-        case cudaErrorLaunchTimeout:
+        case 702:
             return "cudaErrorLaunchTimeout";
 
-        case cudaErrorLaunchOutOfResources:
+        case 701:
             return "cudaErrorLaunchOutOfResources";
 
-        case cudaErrorInvalidDeviceFunction:
+        case 98:
             return "cudaErrorInvalidDeviceFunction";
 
-        case cudaErrorInvalidConfiguration:
+        case 9:
             return "cudaErrorInvalidConfiguration";
 
-        case cudaErrorInvalidDevice:
+        case 101:
             return "cudaErrorInvalidDevice";
 
-        case cudaErrorInvalidValue:
+        case 1:
             return "cudaErrorInvalidValue";
 
-        case cudaErrorInvalidPitchValue:
+        case 12:
             return "cudaErrorInvalidPitchValue";
 
-        case cudaErrorInvalidSymbol:
+        case 13:
             return "cudaErrorInvalidSymbol";
 
-        case cudaErrorMapBufferObjectFailed:
+        case 205:
             return "cudaErrorMapBufferObjectFailed";
 
-        case cudaErrorUnmapBufferObjectFailed:
+        case 206:
             return "cudaErrorUnmapBufferObjectFailed";
 
-        case cudaErrorInvalidHostPointer:
+        case 16:
             return "cudaErrorInvalidHostPointer";
 
-        case cudaErrorInvalidDevicePointer:
+        case 17:
             return "cudaErrorInvalidDevicePointer";
 
-        case cudaErrorInvalidTexture:
+        case 18:
             return "cudaErrorInvalidTexture";
 
-        case cudaErrorInvalidTextureBinding:
+        case 19:
             return "cudaErrorInvalidTextureBinding";
 
-        case cudaErrorInvalidChannelDescriptor:
+        case 20:
             return "cudaErrorInvalidChannelDescriptor";
 
-        case cudaErrorInvalidMemcpyDirection:
+        case 21:
             return "cudaErrorInvalidMemcpyDirection";
 
-        case cudaErrorAddressOfConstant:
+        case 22:
             return "cudaErrorAddressOfConstant";
 
-        case cudaErrorTextureFetchFailed:
+        case 23:
             return "cudaErrorTextureFetchFailed";
 
-        case cudaErrorTextureNotBound:
+        case 24:
             return "cudaErrorTextureNotBound";
 
-        case cudaErrorSynchronizationError:
+        case 25:
             return "cudaErrorSynchronizationError";
 
-        case cudaErrorInvalidFilterSetting:
+        case 26:
             return "cudaErrorInvalidFilterSetting";
 
-        case cudaErrorInvalidNormSetting:
+        case 27:
             return "cudaErrorInvalidNormSetting";
 
-        case cudaErrorMixedDeviceExecution:
+        case 28:
             return "cudaErrorMixedDeviceExecution";
 
-        case cudaErrorCudartUnloading:
+        case 4:
             return "cudaErrorCudartUnloading";
 
-        case cudaErrorUnknown:
+        case 999:
             return "cudaErrorUnknown";
 
-        case cudaErrorNotYetImplemented:
+        case 31:
             return "cudaErrorNotYetImplemented";
 
-        case cudaErrorMemoryValueTooLarge:
+        case 32:
             return "cudaErrorMemoryValueTooLarge";
 
-        case cudaErrorInvalidResourceHandle:
+        case 400:
             return "cudaErrorInvalidResourceHandle";
 
-        case cudaErrorNotReady:
-            return "cudaErrorNotReady";
+        //case 1:
+          //  return "cudaErrorNotReady";
 
-        case cudaErrorInsufficientDriver:
+        case 35:
             return "cudaErrorInsufficientDriver";
 
-        case cudaErrorSetOnActiveProcess:
+        case 708:
             return "cudaErrorSetOnActiveProcess";
 
-        case cudaErrorInvalidSurface:
+        case 37:
             return "cudaErrorInvalidSurface";
 
-        case cudaErrorNoDevice:
+        case 100:
             return "cudaErrorNoDevice";
 
-        case cudaErrorECCUncorrectable:
+        case 214:
             return "cudaErrorECCUncorrectable";
 
-        case cudaErrorSharedObjectSymbolNotFound:
+        case 302:
             return "cudaErrorSharedObjectSymbolNotFound";
 
-        case cudaErrorSharedObjectInitFailed:
+        case 303:
             return "cudaErrorSharedObjectInitFailed";
 
-        case cudaErrorUnsupportedLimit:
+        case 215:
             return "cudaErrorUnsupportedLimit";
 
-        case cudaErrorDuplicateVariableName:
+        case 43:
             return "cudaErrorDuplicateVariableName";
 
-        case cudaErrorDuplicateTextureName:
+        case 44:
             return "cudaErrorDuplicateTextureName";
 
-        case cudaErrorDuplicateSurfaceName:
+        case 45:
             return "cudaErrorDuplicateSurfaceName";
 
-        case cudaErrorDevicesUnavailable:
+        case 46:
             return "cudaErrorDevicesUnavailable";
 
-        case cudaErrorInvalidKernelImage:
+        case 200:
             return "cudaErrorInvalidKernelImage";
 
-        case cudaErrorNoKernelImageForDevice:
+        case 209:
             return "cudaErrorNoKernelImageForDevice";
 
-        case cudaErrorIncompatibleDriverContext:
+        case 49:
             return "cudaErrorIncompatibleDriverContext";
 
-        case cudaErrorPeerAccessAlreadyEnabled:
+        case 704:
             return "cudaErrorPeerAccessAlreadyEnabled";
 
-        case cudaErrorPeerAccessNotEnabled:
+        case 705:
             return "cudaErrorPeerAccessNotEnabled";
 
-        case cudaErrorDeviceAlreadyInUse:
+        case 216:
             return "cudaErrorDeviceAlreadyInUse";
 
-        case cudaErrorProfilerDisabled:
+        case 5:
             return "cudaErrorProfilerDisabled";
 
-        case cudaErrorProfilerNotInitialized:
+        case 6:
             return "cudaErrorProfilerNotInitialized";
 
-        case cudaErrorProfilerAlreadyStarted:
+        case 7:
             return "cudaErrorProfilerAlreadyStarted";
 
-        case cudaErrorProfilerAlreadyStopped:
+        case 8:
             return "cudaErrorProfilerAlreadyStopped";
 
 #if __CUDA_API_VERSION >= 0x4000
@@ -253,10 +255,10 @@ static const char *_cudaGetErrorEnum(cudaError_t error)
             return "cudaErrorHostMemoryNotRegistered";
 #endif
 
-        case cudaErrorStartupFailure:
+        case 127:
             return "cudaErrorStartupFailure";
 
-        case cudaErrorApiFailureBase:
+        case 10000:
             return "cudaErrorApiFailureBase";
     }
 
@@ -266,149 +268,149 @@ static const char *_cudaGetErrorEnum(cudaError_t error)
 
 #ifdef __cuda_cuda_h__
 // CUDA Driver API errors
-static const char *_cudaGetErrorEnum(CUresult error)
+static const char *_cudaGetErrorEnum(int error)
 {
     switch (error)
     {
-        case CUDA_SUCCESS:
+        case 0:
             return "CUDA_SUCCESS";
 
-        case CUDA_ERROR_INVALID_VALUE:
+        case 1:
             return "CUDA_ERROR_INVALID_VALUE";
 
-        case CUDA_ERROR_OUT_OF_MEMORY:
+        case 2:
             return "CUDA_ERROR_OUT_OF_MEMORY";
 
-        case CUDA_ERROR_NOT_INITIALIZED:
+        case 3:
             return "CUDA_ERROR_NOT_INITIALIZED";
 
-        case CUDA_ERROR_DEINITIALIZED:
+        case 4:
             return "CUDA_ERROR_DEINITIALIZED";
 
-        case CUDA_ERROR_PROFILER_DISABLED:
+        case 5:
             return "CUDA_ERROR_PROFILER_DISABLED";
 
-        case CUDA_ERROR_PROFILER_NOT_INITIALIZED:
+        case 6:
             return "CUDA_ERROR_PROFILER_NOT_INITIALIZED";
 
-        case CUDA_ERROR_PROFILER_ALREADY_STARTED:
+        case 7:
             return "CUDA_ERROR_PROFILER_ALREADY_STARTED";
 
-        case CUDA_ERROR_PROFILER_ALREADY_STOPPED:
+        case 8:
             return "CUDA_ERROR_PROFILER_ALREADY_STOPPED";
 
-        case CUDA_ERROR_NO_DEVICE:
+        case 100:
             return "CUDA_ERROR_NO_DEVICE";
 
-        case CUDA_ERROR_INVALID_DEVICE:
+        case 101:
             return "CUDA_ERROR_INVALID_DEVICE";
 
-        case CUDA_ERROR_INVALID_IMAGE:
+        case 200:
             return "CUDA_ERROR_INVALID_IMAGE";
 
-        case CUDA_ERROR_INVALID_CONTEXT:
+        case 201:
             return "CUDA_ERROR_INVALID_CONTEXT";
 
-        case CUDA_ERROR_CONTEXT_ALREADY_CURRENT:
+        case 202:
             return "CUDA_ERROR_CONTEXT_ALREADY_CURRENT";
 
-        case CUDA_ERROR_MAP_FAILED:
+        case 205:
             return "CUDA_ERROR_MAP_FAILED";
 
-        case CUDA_ERROR_UNMAP_FAILED:
+        case 206:
             return "CUDA_ERROR_UNMAP_FAILED";
 
-        case CUDA_ERROR_ARRAY_IS_MAPPED:
+        case 207:
             return "CUDA_ERROR_ARRAY_IS_MAPPED";
 
-        case CUDA_ERROR_ALREADY_MAPPED:
+        case 208:
             return "CUDA_ERROR_ALREADY_MAPPED";
 
-        case CUDA_ERROR_NO_BINARY_FOR_GPU:
+        case 209:
             return "CUDA_ERROR_NO_BINARY_FOR_GPU";
 
-        case CUDA_ERROR_ALREADY_ACQUIRED:
+        case 210:
             return "CUDA_ERROR_ALREADY_ACQUIRED";
 
-        case CUDA_ERROR_NOT_MAPPED:
+        case 211:
             return "CUDA_ERROR_NOT_MAPPED";
 
-        case CUDA_ERROR_NOT_MAPPED_AS_ARRAY:
+        case 212:
             return "CUDA_ERROR_NOT_MAPPED_AS_ARRAY";
 
-        case CUDA_ERROR_NOT_MAPPED_AS_POINTER:
+        case 213:
             return "CUDA_ERROR_NOT_MAPPED_AS_POINTER";
 
-        case CUDA_ERROR_ECC_UNCORRECTABLE:
+        case 214:
             return "CUDA_ERROR_ECC_UNCORRECTABLE";
 
-        case CUDA_ERROR_UNSUPPORTED_LIMIT:
+        case 215:
             return "CUDA_ERROR_UNSUPPORTED_LIMIT";
 
-        case CUDA_ERROR_CONTEXT_ALREADY_IN_USE:
+        case 216:
             return "CUDA_ERROR_CONTEXT_ALREADY_IN_USE";
 
-        case CUDA_ERROR_INVALID_SOURCE:
+        case 300:
             return "CUDA_ERROR_INVALID_SOURCE";
 
-        case CUDA_ERROR_FILE_NOT_FOUND:
+        case 301:
             return "CUDA_ERROR_FILE_NOT_FOUND";
 
-        case CUDA_ERROR_SHARED_OBJECT_SYMBOL_NOT_FOUND:
+        case 302:
             return "CUDA_ERROR_SHARED_OBJECT_SYMBOL_NOT_FOUND";
 
-        case CUDA_ERROR_SHARED_OBJECT_INIT_FAILED:
+        case 303:
             return "CUDA_ERROR_SHARED_OBJECT_INIT_FAILED";
 
-        case CUDA_ERROR_OPERATING_SYSTEM:
+        case 304:
             return "CUDA_ERROR_OPERATING_SYSTEM";
 
-        case CUDA_ERROR_INVALID_HANDLE:
+        case 400:
             return "CUDA_ERROR_INVALID_HANDLE";
 
-        case CUDA_ERROR_NOT_FOUND:
+        case 500:
             return "CUDA_ERROR_NOT_FOUND";
 
-        case CUDA_ERROR_NOT_READY:
+        case 600:
             return "CUDA_ERROR_NOT_READY";
 
-        case CUDA_ERROR_LAUNCH_FAILED:
+        case 719:
             return "CUDA_ERROR_LAUNCH_FAILED";
 
-        case CUDA_ERROR_LAUNCH_OUT_OF_RESOURCES:
+        case 701:
             return "CUDA_ERROR_LAUNCH_OUT_OF_RESOURCES";
 
-        case CUDA_ERROR_LAUNCH_TIMEOUT:
+        case 702:
             return "CUDA_ERROR_LAUNCH_TIMEOUT";
 
-        case CUDA_ERROR_LAUNCH_INCOMPATIBLE_TEXTURING:
+        case 703:
             return "CUDA_ERROR_LAUNCH_INCOMPATIBLE_TEXTURING";
 
-        case CUDA_ERROR_PEER_ACCESS_ALREADY_ENABLED:
+        case 704:
             return "CUDA_ERROR_PEER_ACCESS_ALREADY_ENABLED";
 
-        case CUDA_ERROR_PEER_ACCESS_NOT_ENABLED:
+        case 705:
             return "CUDA_ERROR_PEER_ACCESS_NOT_ENABLED";
 
-        case CUDA_ERROR_PRIMARY_CONTEXT_ACTIVE:
+        case 708:
             return "CUDA_ERROR_PRIMARY_CONTEXT_ACTIVE";
 
-        case CUDA_ERROR_CONTEXT_IS_DESTROYED:
+        case 709:
             return "CUDA_ERROR_CONTEXT_IS_DESTROYED";
 
-        case CUDA_ERROR_ASSERT:
+        case 710:
             return "CUDA_ERROR_ASSERT";
 
-        case CUDA_ERROR_TOO_MANY_PEERS:
+        case 711:
             return "CUDA_ERROR_TOO_MANY_PEERS";
 
-        case CUDA_ERROR_HOST_MEMORY_ALREADY_REGISTERED:
+        case 712:
             return "CUDA_ERROR_HOST_MEMORY_ALREADY_REGISTERED";
 
-        case CUDA_ERROR_HOST_MEMORY_NOT_REGISTERED:
+        case 713:
             return "CUDA_ERROR_HOST_MEMORY_NOT_REGISTERED";
 
-        case CUDA_ERROR_UNKNOWN:
+        case 999:
             return "CUDA_ERROR_UNKNOWN";
     }
 
@@ -533,7 +535,7 @@ static const char *_cudaGetErrorEnum(cusparseStatus_t error)
 
 #ifdef CURAND_H_
 // cuRAND API errors
-static const char *_cudaGetErrorEnum(curandStatus_t error)
+static const char *_cudaGetErrorEnum(int error)
 {
     switch (error)
     {
@@ -752,9 +754,9 @@ static const char *_cudaGetErrorEnum(NppStatus error)
 }
 #endif
 
-#ifdef __DRIVER_TYPES_H__
+#ifdef __DPCT_HPP__
 #ifndef DEVICE_RESET
-#define DEVICE_RESET cudaDeviceReset();
+#define DEVICE_RESET dpct::get_current_device().reset();
 #endif
 #else
 #ifndef DEVICE_RESET
@@ -765,17 +767,9 @@ static const char *_cudaGetErrorEnum(NppStatus error)
 template< typename T >
 void check(T result, char const *const func, const char *const file, int const line)
 {
-    if (result)
-    {
-        fprintf(stderr, "CUDA error at %s:%d code=%d(%s) \"%s\" \n",
-                file, line, static_cast<unsigned int>(result), _cudaGetErrorEnum(result), func);
-        DEVICE_RESET
-        // Make sure we call CUDA Device Reset before exiting
-        exit(EXIT_FAILURE);
-    }
 }
 
-#ifdef __DRIVER_TYPES_H__
+#ifdef __DPCT_HPP__
 // This will output the proper CUDA error strings in the event that a CUDA host call returns an error
 #define checkCudaErrors(val)           check ( (val), #val, __FILE__, __LINE__ )
 
@@ -784,15 +778,12 @@ void check(T result, char const *const func, const char *const file, int const l
 
 inline void __getLastCudaError(const char *errorMessage, const char *file, const int line)
 {
-    cudaError_t err = cudaGetLastError();
-
-    if (cudaSuccess != err)
-    {
-        fprintf(stderr, "%s(%i) : getLastCudaError() CUDA error : %s : (%d) %s.\n",
-                file, line, errorMessage, (int)err, cudaGetErrorString(err));
-        DEVICE_RESET
-        exit(EXIT_FAILURE);
-    }
+    /*
+    DPCT1010:18: SYCL uses exceptions to report errors and does not use
+     * the error codes. The call was replaced with 0. You need to rewrite this
+     * code.
+    */
+    dpct::err0 err = 0;
 }
 #endif
 
@@ -804,7 +795,7 @@ inline void __getLastCudaError(const char *errorMessage, const char *file, const
 inline int _ConvertSMVer2Cores(int major, int minor)
 {
     // Defines for GPU Architecture types (using the SM version to determine the # of cores per SM
-    typedef struct
+    typedef struct dpct_type_138214
     {
         int SM; // 0xMm (hexidecimal notation), M = SM Major version, and m = SM minor version
         int Cores;
@@ -843,12 +834,13 @@ inline int _ConvertSMVer2Cores(int major, int minor)
 }
 // end of GPU Architecture definitions
 
-#ifdef __CUDA_RUNTIME_H__
+#ifdef __DPCT_HPP__
 // General GPU Device CUDA Initialization
 inline int gpuDeviceInit(int devID)
 {
     int device_count;
-    checkCudaErrors(cudaGetDeviceCount(&device_count));
+    checkCudaErrors(DPCT_CHECK_ERROR(
+        device_count = dpct::dev_mgr::instance().device_count()));
 
     if (device_count == 0)
     {
@@ -870,23 +862,33 @@ inline int gpuDeviceInit(int devID)
         return -devID;
     }
 
-    cudaDeviceProp deviceProp;
-    checkCudaErrors(cudaGetDeviceProperties(&deviceProp, devID));
+    dpct::device_info deviceProp;
+    checkCudaErrors(DPCT_CHECK_ERROR(dpct::get_device_info(
+        deviceProp, dpct::dev_mgr::instance().get_device(devID))));
 
-    if (deviceProp.computeMode == cudaComputeModeProhibited)
-    {
-        fprintf(stderr, "Error: device is running in <Compute Mode Prohibited>, no threads can use ::cudaSetDevice().\n");
-        return -1;
-    }
+    /*
+    DPCT1035:20: All SYCL devices can be used by the host to submit
+     * tasks. You may need to adjust this code.
+    */
 
-    if (deviceProp.major < 1)
+
+    /*
+    DPCT1005:21: The SYCL device version is different from CUDA Compute
+     * Compatibility. You may need to rewrite this code.
+    */
+    if (deviceProp.get_major_version() < 1)
     {
         fprintf(stderr, "gpuDeviceInit(): GPU device does not support CUDA.\n");
         exit(EXIT_FAILURE);
     }
 
-    checkCudaErrors(cudaSetDevice(devID));
-    printf("gpuDeviceInit() CUDA Device [%d]: \"%s\n", devID, deviceProp.name);
+    /*
+    DPCT1093:22: The "devID" device may be not the one intended for use.
+     * Adjust the selected device if needed.
+    */
+    checkCudaErrors(DPCT_CHECK_ERROR(dpct::select_device(devID)));
+    printf("gpuDeviceInit() CUDA Device [%d]: \"%s\n", devID,
+           deviceProp.get_name());
 
     return devID;
 }
@@ -899,10 +901,11 @@ inline int gpuGetMaxGflopsDeviceId()
     int device_count       = 0, best_SM_arch      = 0;
     
     unsigned long long max_compute_perf = 0;
-    cudaDeviceProp deviceProp;
-    cudaGetDeviceCount(&device_count);
-    
-    checkCudaErrors(cudaGetDeviceCount(&device_count));
+    dpct::device_info deviceProp;
+    device_count = dpct::dev_mgr::instance().device_count();
+
+    checkCudaErrors(DPCT_CHECK_ERROR(
+        device_count = dpct::dev_mgr::instance().device_count()));
 
     if (device_count == 0)
     {
@@ -911,42 +914,99 @@ inline int gpuGetMaxGflopsDeviceId()
     }
 
     // Find the best major SM Architecture GPU device
-    while (current_device < device_count)
-    {
-        cudaGetDeviceProperties(&deviceProp, current_device);
+    // while (current_device < device_count)
+    // {
+    //     dpct::get_device_info(
+    //         deviceProp, dpct::dev_mgr::instance().get_device(current_device));
 
-        // If this GPU is not running on Compute Mode prohibited, then we can add it to the list
-        if (deviceProp.computeMode != cudaComputeModeProhibited)
-        {
-            if (deviceProp.major > 0 && deviceProp.major < 9999)
-            {
-                best_SM_arch = MAX(best_SM_arch, deviceProp.major);
+    //     // If this GPU is not running on Compute Mode prohibited, then we can add it to the list
+    //     /*
+    //     DPCT1035:23: All SYCL devices can be used by the host to
+    //      * submit tasks. You may need to adjust this code.
+    //     */
+    //     if (true)
+    //     {
+    //         /*
+    //         DPCT1005:24: The SYCL device version is different
+    //          * from CUDA Compute Compatibility. You may need to rewrite this
+    //          * code.
+    //         */
+    //         if (deviceProp.get_major_version() > 0 &&
+    //             deviceProp.get_major_version() < 9999)
+    //         {
+    //             /*
+    //             DPCT1005:25: The SYCL device version is
+    //              * different from CUDA Compute Compatibility. You may need to
+    //              * rewrite this code.
+    //             */
+    //             best_SM_arch =
+    //                 MAX(best_SM_arch, deviceProp.get_major_version());
+    //         }
+    //     }
+
+    //     current_device++;
+    // }
+
+    auto devices = sycl::device::get_devices();
+    
+    for (const auto& dev : devices) {
+        std::string version_str = dev.get_info<sycl::info::device::version>();
+        int major_version_int;
+        std::istringstream iss(version_str);
+
+        // Asumiendo que la versión sigue el formato "X.Y", donde X es la versión mayor
+        char dot; // Para capturar el punto en "X.Y"
+        if (iss >> major_version_int >> dot) {
+            if (major_version_int > 0 && major_version_int < 9999) {
+                best_SM_arch = std::max(best_SM_arch, major_version_int);
             }
         }
-
-        current_device++;
     }
+
+    std::cout << "Best SM Architecture: " << best_SM_arch << std::endl;
+
+    std::cout << "Best SM Architecture: " << best_SM_arch << std::endl;
 
     // Find the best CUDA capable GPU device
     current_device = 0;
 
     while (current_device < device_count)
     {
-        cudaGetDeviceProperties(&deviceProp, current_device);
+        dpct::get_device_info(
+            deviceProp, dpct::dev_mgr::instance().get_device(current_device));
 
         // If this GPU is not running on Compute Mode prohibited, then we can add it to the list
-        if (deviceProp.computeMode != cudaComputeModeProhibited)
+        /*
+        DPCT1035:26: All SYCL devices can be used by the host to
+         * submit tasks. You may need to adjust this code.
+        */
+        if (true)
         {
-            if (deviceProp.major == 9999 && deviceProp.minor == 9999)
+            /*
+            DPCT1005:27: The SYCL device version is different
+             * from CUDA Compute Compatibility. You may need to rewrite this
+             * code.
+            */
+            if (deviceProp.get_major_version() == 9999 &&
+                deviceProp.get_minor_version() == 9999)
             {
                 sm_per_multiproc = 1;
             }
             else
             {
-                sm_per_multiproc = _ConvertSMVer2Cores(deviceProp.major, deviceProp.minor);
+                /*
+                DPCT1005:28: The SYCL device version is
+                 * different from CUDA Compute Compatibility. You may need to
+                 * rewrite this code.
+                */
+                sm_per_multiproc =
+                    _ConvertSMVer2Cores(deviceProp.get_major_version(),
+                                        deviceProp.get_minor_version());
             }
 
-            unsigned long long compute_perf  = (unsigned long long) deviceProp.multiProcessorCount * sm_per_multiproc * deviceProp.clockRate;
+            unsigned long long compute_perf =
+                (unsigned long long)deviceProp.get_max_compute_units() *
+                sm_per_multiproc * deviceProp.get_max_clock_frequency();
 
             if (compute_perf  > max_compute_perf)
             {
@@ -954,7 +1014,12 @@ inline int gpuGetMaxGflopsDeviceId()
                 if (best_SM_arch > 2)
                 {
                     // If our device==dest_SM_arch, choose this, or else pass
-                    if (deviceProp.major == best_SM_arch)
+                    /*
+                    DPCT1005:29: The SYCL device version
+                     * is different from CUDA Compute Compatibility. You may
+                     * need to rewrite this code.
+                    */
+                    if (deviceProp.get_major_version() == best_SM_arch)
                     {
                         max_compute_perf  = compute_perf;
                         max_perf_device   = current_device;
@@ -978,7 +1043,7 @@ inline int gpuGetMaxGflopsDeviceId()
 // Initialization code to find the best CUDA Device
 inline int findCudaDevice(int argc, const char **argv)
 {
-    cudaDeviceProp deviceProp;
+    dpct::device_info deviceProp;
     int devID = 0;
 
     // If the command-line has a device number specified, use it
@@ -1006,9 +1071,20 @@ inline int findCudaDevice(int argc, const char **argv)
     {
         // Otherwise pick the device with highest Gflops/s
         devID = gpuGetMaxGflopsDeviceId();
-        checkCudaErrors(cudaSetDevice(devID));
-        checkCudaErrors(cudaGetDeviceProperties(&deviceProp, devID));
-        printf("GPU Device %d: \"%s\" with compute capability %d.%d\n\n", devID, deviceProp.name, deviceProp.major, deviceProp.minor);
+        /*
+        DPCT1093:30: The "devID" device may be not the one intended
+         * for use. Adjust the selected device if needed.
+        */
+        checkCudaErrors(DPCT_CHECK_ERROR(dpct::select_device(devID)));
+        checkCudaErrors(DPCT_CHECK_ERROR(dpct::get_device_info(
+            deviceProp, dpct::dev_mgr::instance().get_device(devID))));
+        /*
+        DPCT1005:31: The SYCL device version is different from CUDA
+         * Compute Compatibility. You may need to rewrite this code.
+        */
+        printf("GPU Device %d: \"%s\" with compute capability %d.%d\n\n", devID,
+               deviceProp.get_name(), deviceProp.get_major_version(),
+               deviceProp.get_minor_version());
     }
 
     return devID;
@@ -1017,18 +1093,43 @@ inline int findCudaDevice(int argc, const char **argv)
 // General check for CUDA GPU SM Capabilities
 inline bool checkCudaCapabilities(int major_version, int minor_version)
 {
-    cudaDeviceProp deviceProp;
-    deviceProp.major = 0;
-    deviceProp.minor = 0;
+    dpct::device_info deviceProp;
+    /*
+    DPCT1005:32: The SYCL device version is different from CUDA Compute
+     * Compatibility. You may need to rewrite this code.
+    */
+    deviceProp.set_major_version(0);
+    /*
+    DPCT1005:33: The SYCL device version is different from CUDA Compute
+     * Compatibility. You may need to rewrite this code.
+    */
+    deviceProp.set_minor_version(0);
     int dev;
 
-    checkCudaErrors(cudaGetDevice(&dev));
-    checkCudaErrors(cudaGetDeviceProperties(&deviceProp, dev));
+    checkCudaErrors(
+        DPCT_CHECK_ERROR(dev = dpct::dev_mgr::instance().current_device_id()));
+    checkCudaErrors(DPCT_CHECK_ERROR(dpct::get_device_info(
+        deviceProp, dpct::dev_mgr::instance().get_device(dev))));
 
-    if ((deviceProp.major > major_version) ||
-        (deviceProp.major == major_version && deviceProp.minor >= minor_version))
+    /*
+    DPCT1005:34: The SYCL device version is different from CUDA Compute
+     * Compatibility. You may need to rewrite this code.
+    */
+    if ((deviceProp.get_major_version() > major_version) ||
+        /*
+        DPCT1005:35: The SYCL device version is different from CUDA
+           Compute Compatibility. You may need to rewrite this code.
+        */
+        (deviceProp.get_major_version() == major_version &&
+         deviceProp.get_minor_version() >= minor_version))
     {
-        printf("  GPU Device %d: <%16s >, Compute SM %d.%d detected\n", dev, deviceProp.name, deviceProp.major, deviceProp.minor);
+        /*
+        DPCT1005:36: The SYCL device version is different from CUDA
+         * Compute Compatibility. You may need to rewrite this code.
+        */
+        printf("  GPU Device %d: <%16s >, Compute SM %d.%d detected\n", dev,
+               deviceProp.get_name(), deviceProp.get_major_version(),
+               deviceProp.get_minor_version());
         return true;
     }
     else
