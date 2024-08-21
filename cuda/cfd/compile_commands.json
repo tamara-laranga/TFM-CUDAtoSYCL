@@ -1,0 +1,22 @@
+[
+    {
+        "command": "nvcc -c  -O2 -o euler3d -I inc -D__CUDACC__=1 euler3d.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd/euler3d.cu"
+    },
+    {
+        "command": "nvcc -c  -O3 -o euler3d_double -I inc -D__CUDACC__=1 euler3d_double.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd/euler3d_double.cu"
+    },
+    {
+        "command": "nvcc -c  -O3 -o pre_euler3d -I inc -D__CUDACC__=1 pre_euler3d.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd/pre_euler3d.cu"
+    },
+    {
+        "command": "nvcc -c  -O3 -o pre_euler3d_double -I inc -D__CUDACC__=1 pre_euler3d_double.cu",
+        "directory": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd",
+        "file": "/mnt/c/Users/tamar/Desktop/masterHPC/TFM/TFM-CUDAtoSYCL/cuda/cfd/pre_euler3d_double.cu"
+    }
+]

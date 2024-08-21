@@ -6,7 +6,7 @@ endif
 
 # C compiler
 CC = gcc
-CC_FLAGS = -g -O3 -Wall -I$(MATRIX_DIR)
+CC_FLAGS = -g -O3 -Wall -I$(MATRIX_DIR) -w
 
 # CUDA compiler
 NVCC = nvcc
